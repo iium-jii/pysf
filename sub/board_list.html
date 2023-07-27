@@ -135,22 +135,143 @@
 
       <div class="sub_contents">
         <div id="bo_type-text" class="board">
-          <form name="" action="" method="post" class="bo_search">
-            <fieldset>
-              <legend class="sound_only">검색영역</legend>
-              <div class="bo_search_wrap">
-                <select name="" id="" title="검색조건 선택란">
-                  <option value="" selected="selected">전체</option>
-                  <option value="">제목</option>
-                  <option value="">내용</option>		
-                  <option value="">작성자</option>
-                </select>
-                <label for="searchWrd" class="sound_only">검색어를 입력하세요</label>
-                <input type="text" id="searchWrd" name="searchWrd" value="" class="iText" title="검색어를 입력하세요">
-                <button type="submit" title="검색">검색</button>
+          <div class="wrapper">
+            <div class="bo_top">
+              <form name="" action="" method="post" class="bo_search">
+                <fieldset>
+                  <legend class="sound_only">검색영역</legend>
+                  <div class="search_wrap">
+                    <select name="" id="" class="search-select" title="검색조건 선택란">
+                      <option value="" selected="selected">전체</option>
+                      <option value="">제목</option>
+                      <option value="">내용</option>		
+                      <option value="">작성자</option>
+                    </select>
+                    <label for="search-keyword" class="sound_only">검색어를 입력하세요</label>
+                    <input type="text" id="search-keyword" name="" value="" class="search-keyword" title="검색어를 입력하세요">
+                    <button type="submit" class="search-submit" title="검색">
+                      <img src="/source/img/search-btn-gray.svg" alt="">
+                    </button>
+                  </div>
+                </fieldset>
+              </form>
+              <button type="button" onclick="printPage()" class="print-btn">
+                <img src="/source/img/print-white.png" alt="프린트하기">
+                PRINT
+              </button>
+            </div>
+
+            <div class="board_ct">
+              <table class="board_ct-tb">
+                <caption class="sound_only">공지사항 목록 - 번호, 제목, 등록일, 조회로 구성</caption>
+                <thead>
+                  <tr>
+                    <th scope="col" class="th_num">번호</th>
+                    <th scope="col" class="th_subj">제목</th>
+                    <th scope="col" class="th_date">등록일</th>
+                    <th scope="col" class="th_hit">조회</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="tr_notice">
+                    <td class="td_num">
+                      <img src="/source/img/megaphone.png" alt="공지 알림">
+                    </td>
+                    <td class="td_subj">
+                      <a href="">제8회 환황해포럼 생중계 이벤트</a>
+                    </td>
+                    <td class="td_date">2023.00.00</td>
+                    <td class="td_hit">9,999</td>
+                  </tr>
+                  <tr>
+                    <td class="td_num">9</td>
+                    <td class="td_subj">
+                      <a href="">제8회 환황해포럼 생중계 이벤트</a>
+                    </td>
+                    <td class="td_date">2023.00.00</td>
+                    <td class="td_hit">9,999</td>
+                  </tr>
+                  <tr>
+                    <td class="td_num">8</td>
+                    <td class="td_subj">
+                      <a href="">제8회 환황해포럼 생중계 이벤트</a>
+                    </td>
+                    <td class="td_date">2023.00.00</td>
+                    <td class="td_hit">9,999</td>
+                  </tr>
+                  <tr>
+                    <td class="td_num">7</td>
+                    <td class="td_subj">
+                      <a href="">제8회 환황해포럼 생중계 이벤트</a>
+                    </td>
+                    <td class="td_date">2023.00.00</td>
+                    <td class="td_hit">9,999</td>
+                  </tr>
+                  <tr>
+                    <td class="td_num">6</td>
+                    <td class="td_subj">
+                      <a href="">제8회 환황해포럼 생중계 이벤트</a>
+                    </td>
+                    <td class="td_date">2023.00.00</td>
+                    <td class="td_hit">9,999</td>
+                  </tr>
+                  <tr>
+                    <td class="td_num">5</td>
+                    <td class="td_subj">
+                      <a href="">제8회 환황해포럼 생중계 이벤트</a>
+                    </td>
+                    <td class="td_date">2023.00.00</td>
+                    <td class="td_hit">9,999</td>
+                  </tr>
+                  <tr>
+                    <td class="td_num">4</td>
+                    <td class="td_subj">
+                      <a href="">제8회 환황해포럼 생중계 이벤트</a>
+                    </td>
+                    <td class="td_date">2023.00.00</td>
+                    <td class="td_hit">9,999</td>
+                  </tr>
+                  <tr>
+                    <td class="td_num">3</td>
+                    <td class="td_subj">
+                      <a href="">제8회 환황해포럼 생중계 이벤트</a>
+                    </td>
+                    <td class="td_date">2023.00.00</td>
+                    <td class="td_hit">9,999</td>
+                  </tr>
+                  <tr>
+                    <td class="td_num">2</td>
+                    <td class="td_subj">
+                      <a href="">제8회 환황해포럼 생중계 이벤트</a>
+                    </td>
+                    <td class="td_date">2023.00.00</td>
+                    <td class="td_hit">9,999</td>
+                  </tr>
+                  <tr>
+                    <td class="td_num">1</td>
+                    <td class="td_subj">
+                      <a href="">제8회 환황해포럼 생중계 이벤트</a>
+                    </td>
+                    <td class="td_date">2023.00.00</td>
+                    <td class="td_hit">9,999</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="pagination">
+                <a href="" class="pgn-arrow pgn-prev">
+                  <span sound_only>이전페이지</span>
+                </a>
+                <a href="" class="pgn-num act">1</a>
+                <a href="" class="pgn-num">2</a>
+                <a href="" class="pgn-num">3</a>
+                <a href="" class="pgn-num">4</a>
+                <a href="" class="pgn-num">5</a>
+                <a href="" class="pgn-arrow pgn-next">
+                  <span sound_only>다음페이지</span>
+                </a>
               </div>
-            </fieldset>
-          </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
