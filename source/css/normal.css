@@ -3,7 +3,7 @@
 }
 
 /* Header { */
-  .header {position: fixed; background-color: #fff; display: block; width: 100%; z-index: 50;}
+  .header {position: fixed; background-color: #fff; display: block; width: 100%; z-index: 50; box-shadow: 0 0 30px rgba(0,0,0,0.15);}
   .header .wrapper {width: 100%; padding: 0 50px;}
   .hd-wrap {display: flex; align-items: center; justify-content: space-between; height: 90px;}
 
