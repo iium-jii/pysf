@@ -1,3 +1,8 @@
+// 프린트(print) 이벤트
+function printPage() {
+  window.print();
+}
+
 /**
  * [메인] 홍보영상 슬라이드
  */
