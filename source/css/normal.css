@@ -172,6 +172,17 @@
 .sub_top .txt-dp2 {margin-top: 13px; font-size: 54px; font-weight: 700; color: #0f0f0f; line-height: 1;}
 
 .sub_contents {padding: 100px 0 120px;}
+.sub-section {padding-bottom: 25px;}
+.sub-section:last-child {padding-bottom: 0;}
+
+.sub-section-title-box {margin-bottom: 11px; position: relative;}
+.sub-section-title-box .title {font-weight: 600; font-size: 26px; color: #0f0f0f; line-height: 1.53; position: relative; padding-left: 17px;}
+.sub-section-title-box .title::before {content: ''; width: 3px; height: 23px; background-color: var(--main-color); position: absolute; top: 8px; left: 0;}
+.sub-section-title-box .print-btn {position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+
+.print-btn {border: none; font-weight: 400; font-size: 14px; color: #fff; border-radius: 5px; background-color: #999; display: inline-block; padding: 3.5px 5px;}
+.print-btn span {display: inline-block;}
+.print-btn span:first-child {margin-right: 2px;}
 /* } Sub */
 
 /* Board { */
@@ -180,3 +191,60 @@
 
   /* } Text */
 /* } Board */
+
+/* 행사소개 { */
+  .intro-wrap {display: flex; align-items: start; justify-content: space-between;}
+  .intro-left {max-width: 925px; width: 100%;}
+  .intro-content01 {}
+  .intro-content01 .text-box {font-weight: 600; font-size: 24px; color: #fff; background-color: var(--main-color); border-radius: 5px; padding: 17px 26px;}
+  .intro-content01-ul {padding-top: 20px;}
+  .intro-content01-ul li {padding-bottom: 5px;}
+  .intro-content01-ul li:last-child {padding-bottom: 0;}
+  .intro-content01-ul li .left {width: 100px; border-radius: 5px; border: 1px solid var(--main-color); font-weight: 400; font-size: 18px; color: var(--main-color); text-align: center; padding: 5.5px 0;}
+  .intro-content01-ul li .right {width: calc(100% - 100px); font-weight: 300; font-size: 18px; color: #333; line-height: 1.777; padding-left: 13px;}
+
+  .intro-content02-table {border-top: 2px solid #333; border-bottom: 2px solid #333;}
+  .intro-content02-table tr {border-bottom: 1px solid #ddd;}
+  .intro-content02-table tr:last-child {border-bottom: none;}
+  .intro-content02-table tr th {border-right: 1px solid #ddd; width: 150px; background-color: #f9f9f9; font-weight: 500; font-size: 18px; color: #333; padding: 14.75px 0;}
+  .intro-content02-table tr td {width: calc(100% - 150px); padding: 14.75px 30px; font-weight: 300; font-size: 18px; color: #666;}
+
+  .intro-right {width: calc(100% - 925px); padding-left: 155px;}
+  .print-btn-wrap {text-align: right; padding-bottom: 17px;}
+  .intro-right-img-wrap {border-radius: 5px; overflow: hidden;}
+  .intro-right-img {position: relative; height: 0; padding-bottom: 141.347%;}
+  .intro-right-img img {position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+/* } 행사소개 */
+
+/* 초대의 글 { */
+  .invite-wrap {display: flex; align-items: start; justify-content: space-between;}
+  .invite-left {max-width: 760px; width: 100%;}
+  .invite-content01 {}
+  .invite-content01 .title {font-weight: 600; font-size: 30px; color: #0f0f0f; line-height: 1.333; padding-bottom: 30px;}
+  .invite-content01 .text {font-weight: 300; font-size: 18px; color: #333; line-height: 1.666;}
+
+  .invite-right {width: calc(100% - 760px); padding-left: 133px;}
+/* } 초대의 글 */
+
+/* 오시는 길 { */
+  .map-wrap {}
+  .map-content01 {position: relative;}
+  .map-content01 .add-text {}
+  .map-content01 .add-text .title {font-weight: 500; font-size: 18px; color: #333;}
+  .map-content01 .add-text .text {font-weight: 300; font-size: 18px; color: #666;}
+  .map-content01 .find-btn {display: inline-block; border: 1px solid #ddd; border-radius: 5px; background: url('/source/img/arr-right01.png') no-repeat center right 20px #fff; font-weight: 300; font-size: 16px; color: #999; width: 190px; height: 46px; line-height: 46px; padding: 0 20px;position: absolute; top: 0; right: 0;}
+  .map-content01 .map-box {padding-top: 15px;}
+  .wrap_controllers.hide{display: none;}
+  .root_daum_roughmap .border1 {display: none;}
+  .root_daum_roughmap .border2 {display: none;}
+  .root_daum_roughmap .border3 {display: none;}
+  .root_daum_roughmap .border4 {display: none;}
+  .map-content01 .map-box .map {border-radius: 5px; overflow: hidden;}
+
+  .map-content02-ul {}
+  .map-content02-ul li {padding-bottom: 5px;}
+  .map-content02-ul li:last-child {padding-bottom: 0;}
+  .map-content02-ul li .title {width: 187px; border: 1px solid var(--main-color); border-radius: 5px; text-align: center; font-weight: 400; font-size: 18px; color: var(--main-color); padding: 5.5px 0;}
+  .map-content02-ul li .text {font-weight: 300; font-size: 18px; color: #666; padding-left: 15px; line-height: 1.66;}
+  .map-content02 .add-expl-box {font-weight: 300; font-size: 16px; color: #999; border-radius: 5px; background-color: #fafafa; width: 100%; padding: 18px 27px; margin-top: 20px; line-height: 1.5;}
+/* } 오시는 길 */

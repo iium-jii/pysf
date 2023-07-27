@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" id="meta_viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
+    <title>환황해포럼</title>
+
+    <!-- JS 파일 연결 -->
+    <script src="/source/js/jquery-1.12.4.min.js"></script>
+    <!-- Plug-in, Library { -->
+    <script src="/source/plugin/slick/slick.min.js"></script>
+    <!-- } Plug-in, Library -->
+    <script src="/source/js/normal.js"></script>
+    <!-- CSS 파일 연결 -->
+    <!-- Plug-in, Library { -->
+    <link rel="stylesheet" href="/source/plugin/slick/slick.css">
+    <!-- } Plug-in, Library -->
+    <link rel="stylesheet" href="/source/css/fonts.css">
+    <link rel="stylesheet" href="/source/css/common.css">
+    <link rel="stylesheet" href="/source/css/normal.css">
+    <link rel="stylesheet" href="/source/css/responsive.css">
+
+    <!-- Favicon { -->
+    <link rel="shortcut icon" href="/source/img/favicon.ico">
+    <!-- } Favicon -->
+
+  </head>
+  <body>
+
+    <!-- Header { -->
+    <div class="header">
+      <div class="wrapper">
+        <div class="hd-wrap">
+          <h1 class="logo">
+            <a href="">
+              <img src="/source/img/logo.png" alt="환황해포럼 로고">
+            </a>
+          </h1>
+          <div class="gnb">
+            <ul class="i-col-0 gnb-ul">
+              <li>
+                <a href="">행사소개</a>
+                <ul class="snb">
+                  <li><a href="">행사소개</a></li>
+                  <li><a href="">초대의 글</a></li>
+                  <li><a href="">행사장소</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">프로그램</a>
+                <ul class="snb">
+                  <li><a href="">프로그램</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">초청연사</a>
+                <ul class="snb">
+                  <li><a href="">초청인사</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">참가자안내</a>
+                <ul class="snb">
+                  <li><a href="">등록신청</a></li>
+                  <li><a href="">신청확인</a></li>
+                  <li><a href="">충남 관광명소</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">자료실</a>
+                <ul class="snb">
+                  <li><a href="">이전포럼</a></li>
+                  <li><a href="">영상자료</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">커뮤니티</a>
+                <ul class="snb">
+                  <li><a href="">공지사항</a></li>
+                  <li><a href="">보도자료</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="hd-right-menu">
+            <div class="hd-right-menu-item">
+              <button class="lang-btn">
+                <span><img src="/source/img/icon-lang.png" alt="언어 변경"></span>
+                <span>KR</span>
+              </button>
+            </div>
+            <button class="all-menu">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } Header -->
+    
+    <!-- Fix Menu { -->
+    <div class="fix-menu">
+      <ul class="fix-menu-ul">
+        <li>
+          <a href="">
+            <img src="/source/img/icon-online-write.png" alt="온라인등록">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/source/img/icon-notice.png" alt="공지사항">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="/source/img/icon-program.png" alt="프로그램">
+          </a>
+        </li>
+      </ul>
+      <button class="top-btn">
+        <p><img src="/source/img/icon-top-btn.png" alt="상단으로 이동하기"></p>
+        <p>TOP</p>
+      </button>
+    </div>
+    <!-- } Fix Menu -->
+
+    <!-- Sub Content { -->
+    <div class="sub">
+      <div class="sub_top">
+        <div class="txt_box">
+          <p class="txt-dp1">행사소개</p>
+          <p class="txt-dp2">오시는 길</p>
+        </div>
+      </div>
+
+      <div class="sub_contents">
+        <div id="map">
+          <div class="wrapper">
+            <div class="map-wrap">
+              <div class="sub-section">
+                <div class="sub-section-title-box">
+                  <p class="title">행사주소</p>
+                  <button class="print-btn">
+                    <span><img src="/source/img/icon-print.png" alt="프린트하기"></span>
+                    <span>PRINT</span>
+                  </button>
+                </div>
+                <div class="map-content01">
+                  <p class="add-text">
+                    <span class="title">주소.</span>
+                    <span class="text">충남 부여군 규암면 백제문로 400 (우)33115</span>
+                  </p>
+                  <p class="add-text">
+                    <span class="title">전화.</span>
+                    <span class="text">041-939-1000</span>
+                  </p>
+                  <a href="" class="find-btn">길찾기</a>
+                  <div class="map-box">
+                    <div class="map">
+                      <!-- * 카카오맵 - 지도퍼가기 -->
+                      <!-- 1. 지도 노드 -->
+                      <div id="daumRoughmapContainer1690443804851" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;"></div>
+
+                      <!--
+                        2. 설치 스크립트
+                        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                      -->
+                      <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                      <!-- 3. 실행 스크립트 -->
+                      <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                          "timestamp" : "1690443804851",
+                          "key" : "2foze",
+                          //"mapWidth" : "640",
+                          "mapHeight" : "500"
+                        }).render();
+                      </script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sub-section">
+                <div class="sub-section-title-box">
+                  <p class="title">자동차로 오시는 경우</p>
+                </div>
+                <div class="map-content02">
+                  <ul class="map-content02-ul">
+                    <li class="i-col-0">
+                      <div class="title">서울(경부고속도로)</div>
+                      <div class="text">서울 → 경부고속도로 → 천안JC → 천안논산고속도로 → 서공주JC → 공주서천고속도로	 → 부여IC → 롯데리조트부여 (약 2시간 30분 소요)</div>
+                    </li>
+                    <li class="i-col-0">
+                      <div class="title">서울(서해안고속도로)</div>
+                      <div class="text">서울 → 서해안고속도로 → 당진JC → 당진고속도로	→ 서공주JC → 공주서천고속도로 → 부여IC → 롯데리조트부여 (약 2시간 소요)</div>
+                    </li>
+                  </ul>
+                  <div class="add-expl-box">
+                    ※ 소요 시간은 교통 상황에 따라 다를 수 있습니다.
+                  </div>
+                </div>
+              </div>
+              <div class="sub-section">
+                <div class="sub-section-title-box">
+                  <p class="title">버스로 오시는 경우</p>
+                </div>
+                <div class="map-content02">
+                  <ul class="map-content02-ul">
+                    <li class="i-col-0">
+                      <div class="title">서울 출발</div>
+                      <div class="text">
+                        남부 터미널(02-551-8550) → 부여 시외버스 터미널 (약 2시간 소요) <br>
+                        동서울 터미널(02-446-8000) → 부여 시외버스 터미널 (약 2시간 40분 소요)
+                      </div>
+                    </li>
+                    <li class="i-col-0">
+                      <div class="title">천안 출발</div>
+                      <div class="text">
+                        천안 시외버스 터미널(041-640-6400) → 부여 시외버스 터미널 (약 2시간 소요)
+                      </div>
+                    </li>
+                    <li class="i-col-0">
+                      <div class="title">대전 출발</div>
+                      <div class="text">
+                        서부 시외버스 터미널(042-584-1615) → 부여 시외버스 터미널 (약 1시간 30분 소요)
+                      </div>
+                    </li>
+                    <li class="i-col-0">
+                      <div class="title">청주 출발</div>
+                      <div class="text">
+                        서부 시외버스 터미널(1688-4321) → 부여 시외버스 터미널 (약 3시간 10분 소요)
+                      </div>
+                    </li>
+                    <li class="i-col-0">
+                      <div class="title">농어촌버스</div>
+                      <div class="text">
+                        부여 시외버스 터미널 : 403번(부여시장) → 한국전통문화대학교 (약 20분 소요) <br>
+                        * 농어촌 버스 시간표문의 : 041-843-6092~3
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="add-expl-box">
+                    ※ 예약 또는 기타 자세한 사항은 전화, 또는 홈페이지를 통해 확인하시기 바랍니다.
+                  </div>
+                </div>
+              </div>
+              <div class="sub-section">
+                <div class="sub-section-title-box">
+                  <p class="title">기차로 오시는 경우</p>
+                </div>
+                <div class="map-content02">
+                  <ul class="map-content02-ul">
+                    <li class="i-col-0">
+                      <div class="title">서울 출발</div>
+                      <div class="text">
+                        용산역 → 논산역 (약 1시간 34분 소요) <br>
+                        용산역 → 공주역 (약 59분 소요)
+                      </div>
+                    </li>
+                    <li class="i-col-0">
+                      <div class="title">대구 출발</div>
+                      <div class="text">
+                        대구역, 동대구역 → 대전역 (약 40분 소요)
+                      </div>
+                    </li>
+                    <li class="i-col-0">
+                      <div class="title">부산 출발</div>
+                      <div class="text">
+                        부산역 → 대전역 (약 2시간 소요)
+                      </div>
+                    </li>
+                    <li class="i-col-0">
+                      <div class="title">광주 출발</div>
+                      <div class="text">
+                        광주송정역 → 논산역 (약 53분 소요) <br>
+                        광주송정역 → 공주역 (약 45분 소요)
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="add-expl-box">
+                    ※ 소요시간 기준은 가장 빠른 KTX 기준입니다. <br>
+                    ※ 하차역에서 부여 시외버스 터미널로 환승하신 후, 대중교통을 이용해 롯데리조트부여로 오시면 됩니다. <br>
+                    ※ 예약 또는 기타 자세한 사항은 우측 상단의 기차 예매 버튼, 코레일 홈페이지, 전화로 문의하시기 바랍니다.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } Sub Content -->
+
+    <!-- Footer { -->
+    <div class="footer">
+      <div class="ft-wrap">
+        <div class="ft-top">
+          <div class="wrapper">
+            <div class="ft-host-ct">
+              <p class="ft-host-title">주최/주관</p>
+              <ul class="i-col-0 ft-host-ul">
+                <li>
+                  <a href=""><img src="/source/img/ft-host01.png" alt="충청남도"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="ft-host-ct">
+              <p class="ft-host-title">후원</p>
+              <ul class="i-col-0 ft-host-ul">
+                <li>
+                  <a href=""><img src="/source/img/ft-host02.png" alt="외교부"></a>
+                </li>
+                <li>
+                  <a href=""><img src="/source/img/ft-host03.png" alt="대한민국 국방부"></a>
+                </li>
+                <li>
+                  <a href=""><img src="/source/img/ft-host04.png" alt="농림축산식품부"></a>
+                </li>
+                <li>
+                  <a href=""><img src="/source/img/ft-host05.png" alt="해양수산부"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="ft-bot">
+          <div class="wrapper">
+            <div class="ft-bot-ct">
+              <div class="ft-bot-item">
+                <ul class="i-col-0 ft-info-ul">
+                  <li>(02586) 서울시 동대문구 난계로 250 경해빌딩 204호 (주)더오션</li>
+                  <br>
+                  <li>프로그램 및 행사 문의전화 : 070-4900-3100</li>
+                  <li>E-mail : panyellowsea2022@gmail.com</li>
+                </ul>
+              </div>
+              <div class="ft-bot-item">
+                <p class="copyright">Copyright(c)환황해포럼. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- } Footer -->
+    
+  </body>
+</html>
