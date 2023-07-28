@@ -197,6 +197,8 @@
 
 .sub_contents {padding: 100px 0 120px;}
 
+.sub_ct_top_lt {float: left;}
+
 .print-btn {float: right; padding: 6px 8px; border: 0; border-radius: 4px; font-size: 14px; font-weight: 400; color: #fff; background: #999;}
 .print-btn img {width: 16px; margin: -4px 7px 0 0; vertical-align: middle;}
 .sub-section {padding-bottom: 25px;}
@@ -209,7 +211,7 @@
 
 /* Board { */
   .board .bo_top {}
-  .bo_search {float: left;}
+  .bo_search {}
   .bo_search fieldset {overflow: hidden; margin: 0; padding: 0; border: 1px solid #ddd; border-radius: 3px; background: #fff;}
   .search_wrap {display: flex; flex-flow: row wrap; align-items: flex-start;}
   .search-select {min-width: 150px; height: 48px; padding: 0 20px; border: 0; border-right: 1px solid #ddd; font-size: 18px; font-weight: 400; color: #666; background: url('/source/img/select-arrow.png') no-repeat center right 20px/13px auto; appearance:none;}
@@ -221,7 +223,13 @@
   .board_ct {margin-top: 20px;}
 
   .pagination {display: flex; flex-flow: row wrap; justify-content: center; align-items: center; gap: 0 7px; margin-top: 20px;}
-  .pagination .pgn-num {display: block; width: 40px; height: 40px; line-height: 40px; font-size: 18px; font-weight: 400; color: #999; background: #fff; text-align: center;}
+  .pagination .pgn-num {display: block; position: relative; width: 40px; height: 40px; line-height: 40px; font-size: 18px; font-weight: 400; color: #999; background: #fff; text-align: center;}
+  .pagination .pgn-num:before {content: ""; display: block; position: absolute; top: 50%; left: -4px; z-index: 1; height: 15px; margin-top: -7.5px; border-left: 1px solid #ddd;}
+  .pagination .pgn-num:after {content: ""; display: block; position: absolute; top: 50%; right: -4px; z-index: 1; height: 15px; margin-top: -7.5px; border-left: 1px solid #ddd;}
+  .pagination .pgn-num:nth-child(1):before,
+  .pagination .pgn-num:nth-child(2):before {display: none;}
+  .pagination .pgn-num:nth-last-child(1):after,
+  .pagination .pgn-num:nth-last-child(2):after {display: none;}
   .pagination .pgn-num:hover {font-weight: 500; color: #333;}
   .pagination .pgn-num.act {font-weight: 500; color: var(--main-color);}
   .pagination .pgn-arrow {display: block; width: 40px; height: 40px; line-height: 40px; border-radius: 5px; font-size: 0; text-align: center; transition: 0.3s ease-out;}
@@ -261,8 +269,28 @@
   #bo_type-text .board_ct-tb tbody tr.tr_notice td {font-weight: 500; color: #333; vertical-align: middle;}
   #bo_type-text .board_ct-tb tbody tr.tr_notice td a {color: #333;}
   #bo_type-text .board_ct-tb tbody tr.tr_notice td.td_num img {width: 26px; vertical-align: middle; line-height: 1;}
-
   /* } Text */
+
+  /* Video { */
+  #bo_type-video .board_ct {overflow: hidden;}
+  #bo_type-video .board_ct-vid {margin: -17px -7.5px; font-size: 0;}
+  #bo_type-video .board_ct-vid .vid-list {display: inline-block; width: 25%; padding: 17px 7.5px; font-size: 16px;}
+  #bo_type-video .board_ct-vid .vid-list_inner {display: block;}
+  #bo_type-video .board_ct-vid .vid-thumb {display: block; overflow: hidden; position: relative; width: 100%; height: 0; padding-bottom: 55%; border: 1px solid #ddd; border-radius: 5px;}
+  #bo_type-video .board_ct-vid .vid-thumb:after {content: ""; display: none; position: absolute; top: 0; left: 0; z-index: 5; width: calc(100% - 4px); height: calc(100% - 4px); border: 2px solid var(--main-color); border-radius: 5px;}
+  #bo_type-video .board_ct-vid .vid-thumb img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; width: 100%;}
+  #bo_type-video .board_ct-vid .vid-subj {margin: 17px 0 12px; font-size: 18px; font-weight: 400; color: #333; line-height: 1;}
+  #bo_type-video .board_ct-vid .vid-date {font-size: 16px; font-weight: 300; color: #666; line-height: 1;}
+  #bo_type-video .board_ct-vid .vid-list_inner:hover .vid-thumb:after {display: block;}
+
+  #bo_type-video .pagination {margin-top: 40px;}
+
+  .ifr-video {position: relative; width: 1000px; max-width: 100%; height: 0; padding-bottom: 37%; margin: 20px auto;}
+  .ifr-video iframe {position: absolute; width: 100%; height: 100%;}
+
+  .attach-video {}
+  .attach-video video {display: block; width: 1000px; max-width: 100%; margin: 20px auto;}
+  /* } Video */
 /* } Board */
 
 /* 행사소개 { */
