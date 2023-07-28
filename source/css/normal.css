@@ -182,14 +182,14 @@
 /* } Main */
 
 /* Sub { */
-.sub_top {display: flex; align-items: center; justify-content: center; width: 100%; height: 450px; background: url('/source/img/sub_top_visual-bg.jpg') no-repeat center/cover;}
+.sub_top {overflow: hidden; display: flex; align-items: center; justify-content: center; width: 100%; height: 450px; background: url('/source/img/sub_top_visual-bg.jpg') no-repeat center/cover; border-radius: 0 0 85px 85px;}
 .sub_top .txt_box {padding-top: 90px; text-align: center;}
 .sub_top .txt-dp1 {font-size: 20px; font-weight: 400; color: #666; line-height: 1;}
 .sub_top .txt-dp2 {margin-top: 13px; font-size: 54px; font-weight: 700; color: #0f0f0f; line-height: 1;}
 
 .sub_contents {padding: 100px 0 120px;}
 
-.print-btn {padding: 6px 8px; border: 0; border-radius: 4px; font-size: 14px; font-weight: 400; color: #fff; background: #999;}
+.print-btn {float: right; padding: 6px 8px; border: 0; border-radius: 4px; font-size: 14px; font-weight: 400; color: #fff; background: #999;}
 .print-btn img {width: 16px; margin: -4px 7px 0 0; vertical-align: middle;}
 .sub-section {padding-bottom: 25px;}
 .sub-section:last-child {padding-bottom: 0;}
@@ -200,8 +200,9 @@
 /* } Sub */
 
 /* Board { */
-  .board .bo_top {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: flex-start;}
-  .board fieldset {overflow: hidden; margin: 0; padding: 0; border: 1px solid #ddd; border-radius: 3px; background: #fff;}
+  .board .bo_top {}
+  .bo_search {float: left;}
+  .bo_search fieldset {overflow: hidden; margin: 0; padding: 0; border: 1px solid #ddd; border-radius: 3px; background: #fff;}
   .search_wrap {display: flex; flex-flow: row wrap; align-items: flex-start;}
   .search-select {min-width: 150px; height: 48px; padding: 0 20px; border: 0; border-right: 1px solid #ddd; font-size: 18px; font-weight: 400; color: #666; background: url('/source/img/select-arrow.png') no-repeat center right 20px/13px auto; appearance:none;}
   .search-select::-ms-expand {display:none}
