@@ -42,7 +42,7 @@ const mainPromotionSl = () => {
   }
 
   let stopBtn = document.querySelector('.main-promotion-pause');
-  let imgTag = stopBtn.querySelector('img');
+  let imgTag = document.querySelector('.main-promotion-pause img');
 
   stopBtn.addEventListener('click', function(){
     if(stopBtn.classList.contains('pause')){
@@ -110,6 +110,6 @@ const fixMenu = () => {
 // Document ready Function
 $(document).ready(function(){
   gnbOver(); // [공통] GNB 메뉴 마우스 오버
-  mainPromotionSl(); // [메인] 홍보영상 슬라이드
+  //mainPromotionSl(); // [메인] 홍보영상 슬라이드
   fixMenu(); // [공통] 고정메뉴 및 탑버튼 function
 });
