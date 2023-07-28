@@ -188,9 +188,12 @@
 .sub_top .txt-dp2 {margin-top: 13px; font-size: 54px; font-weight: 700; color: #0f0f0f; line-height: 1;}
 
 .sub_tab {position: absolute; bottom: 0; left: 0; width: 100%;}
-.sub_tab-ul {}
-.sub_tab-ul li {}
-.sub_tab-ul li a {display: block; text-align: center;}
+.sub_tab-ul {background-color: rgba(0,0,0,0.7); border-radius: 35px 35px 0 0;}
+.sub_tab-ul li {position: relative;}
+.sub_tab-ul li::after {content: ''; width: 1px; height: 15px; background-color: rgba(255,255,255,0.5); position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+.sub_tab-ul li:last-child::after {display: none;}
+.sub_tab-ul li a {display: block; text-align: center; font-weight: 300; font-size: 18px; color: #fff; padding: 19px 0;}
+.sub_tab-ul li.active a {font-weight: 500;color: var(--main-color);}
 
 .sub_contents {padding: 100px 0 120px;}
 
@@ -348,3 +351,26 @@
   .program-btn-box .download-btn {margin-right: 5px;}
   .program-btn-box .download-btn:last-child {margin-right: 0;}
 /* } 프로그램 */
+
+/* 초청연사 { */
+  .speaker-title {padding-bottom: 30px;}
+  .speaker-title .title {display: inline-block; font-weight: 600; font-size: 44px; color: #0f0f0f; line-height: 1;}
+
+  .speaker-content01 {padding-bottom: 55px;}
+  .speaker-content01 .sub-section {vertical-align: top;}
+  .speaker-card-list {margin: -20px;}
+  .speaker-card-list li {padding: 20px;}
+  .speaker-card-box {display: flex;}
+  .speaker-card-img {border-radius: 5px; overflow: hidden; position: relative; height: 0; padding-bottom: 30%; width: 180px;}
+  .speaker-card-img img {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 100%;}
+  .speaker-card-text-box {padding-left: 20px;}
+  .speaker-card-text {margin-bottom: 5px;}
+  .speaker-card-text:last-child {margin-bottom: 0;}
+  .speaker-card-text > * {vertical-align: top;}
+  .speaker-card-text .left {width: 80px; border-radius: 5px; border: 1px solid var(--main-color); text-align: center; font-weight: 400; font-size: 16px; color: var(--main-color); padding: 4.5px 0;}
+  .speaker-card-text .right {font-weight: 300; font-size: 18px; color: #333;padding-left: 12px;}
+  .speaker-card-text .right .dot {display: block;}
+  .speaker-card-text .right .dot::before {content: '· '; font-weight: 300; font-size: 18px; color: var(--main-color);}
+
+  .speaker-wrap02 {background-color: #fafafa; padding: 73px 0 120px;}
+/* } 초청연사 */
