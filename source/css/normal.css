@@ -194,7 +194,7 @@
 
 .sub_contents {padding: 100px 0 120px;}
 
-.print-btn {padding: 6px 8px; border: 0; border-radius: 4px; font-size: 14px; font-weight: 400; color: #fff; background: #999;}
+.print-btn {float: right; padding: 6px 8px; border: 0; border-radius: 4px; font-size: 14px; font-weight: 400; color: #fff; background: #999;}
 .print-btn img {width: 16px; margin: -4px 7px 0 0; vertical-align: middle;}
 .sub-section {padding-bottom: 25px;}
 .sub-section:last-child {padding-bottom: 0;}
@@ -205,8 +205,9 @@
 /* } Sub */
 
 /* Board { */
-  .board .bo_top {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: flex-start;}
-  .board fieldset {overflow: hidden; margin: 0; padding: 0; border: 1px solid #ddd; border-radius: 3px; background: #fff;}
+  .board .bo_top {}
+  .bo_search {float: left;}
+  .bo_search fieldset {overflow: hidden; margin: 0; padding: 0; border: 1px solid #ddd; border-radius: 3px; background: #fff;}
   .search_wrap {display: flex; flex-flow: row wrap; align-items: flex-start;}
   .search-select {min-width: 150px; height: 48px; padding: 0 20px; border: 0; border-right: 1px solid #ddd; font-size: 18px; font-weight: 400; color: #666; background: url('/source/img/select-arrow.png') no-repeat center right 20px/13px auto; appearance:none;}
   .search-select::-ms-expand {display:none}
@@ -224,6 +225,25 @@
   .pagination .pgn-arrow:hover {background-color: var(--main-color);}
   .pagination .pgn-prev {background: #999 url('/source/img/prev-arrow-white.svg') no-repeat center/14px auto;}
   .pagination .pgn-next {background: #999 url('/source/img/next-arrow-white.svg') no-repeat center/14px auto;}
+
+  .board_v_ct {margin-top: 20px;}
+
+  .bo_v_header {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; padding: 25px; border-top: 2px solid #333; border-bottom: 1px solid #ddd; background: #f9f9f9;}
+  .bo_v-subj {font-size: 20px; font-weight: 500; color: #0f0f0f;}
+  .bo_v-date {font-size: 16px; font-weight: 300; color: #666;}
+
+  .bo_v_attach {padding: 15px 25px; border-bottom: 1px solid #ddd;}
+  .bo_v_file {display: block; padding: 3px 0;}
+  .bo_v_file .icon {width: 16px; margin-right: 12px;}
+  .bo_v_file .text {font-size: 18px; font-weight: 300; color: #666; line-height: 1.2;}
+  .bo_v_file:hover .text {color: var(--main-color);}
+
+  .bo_v_cont {min-height: 250px; padding: 30px 25px 50px; border-bottom: 2px solid #333; font-size: 18px; font-weight: 300; color: #666; word-break: break-all;}
+
+  .bo_v_bot {margin-top: 20px;}
+  .bo_v_link_group {display: flex; flex-direction: row; flex-wrap: wrap; align-content: center; justify-content: space-between; align-items: center;}
+  .bo_v-move {display: block; width: 90px; height: 46px; line-height: 46px; border-radius: 5px; font-size: 16px; font-weight: 300; color: #fff; background: #999; text-align: center;}
+  .bo_v-list {display: block; width: 90px; height: 46px; line-height: 46px; border-radius: 5px; font-size: 16px; font-weight: 300; color: #fff; background: #222; text-align: center;}
   /* Text { */
   #bo_type-text .board_ct-tb {width: 100%; border-top: 2px solid #333; border-bottom: 2px solid #333;}
   #bo_type-text .board_ct-tb thead tr th {padding: 15px 10px; font-size: 18px; font-weight: 500; color: #0f0f0f; background: #f9f9f9;}
