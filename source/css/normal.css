@@ -220,6 +220,26 @@
   .pagination .pgn-arrow:hover {background-color: var(--main-color);}
   .pagination .pgn-prev {background: #999 url('/source/img/prev-arrow-white.svg') no-repeat center/14px auto;}
   .pagination .pgn-next {background: #999 url('/source/img/next-arrow-white.svg') no-repeat center/14px auto;}
+
+  .board_v_ct {margin-top: 20px;}
+
+  .bo_v_header {display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; padding: 25px; border-top: 2px solid #333; border-bottom: 1px solid #ddd; background: #f9f9f9;}
+  .bo_v-subj {font-size: 20px; font-weight: 500; color: #0f0f0f;}
+  .bo_v-date {font-size: 16px; font-weight: 300; color: #666;}
+
+  .bo_v_attach {padding: 15px 25px; border-bottom: 1px solid #ddd;}
+  .bo_v_file {display: block; padding: 3px 0;}
+  .bo_v_file .icon {width: 16px; margin-right: 12px;}
+  .bo_v_file .text {font-size: 18px; font-weight: 300; color: #666; line-height: 1.2;}
+  .bo_v_file:hover .text {color: var(--main-color);}
+
+  .bo_v_cont {min-height: 250px; padding: 30px 25px 50px; border-bottom: 2px solid #333; font-size: 18px; font-weight: 300; color: #666; word-break: break-all;}
+
+  .bo_v_bot {margin-top: 20px;}
+  .bo_v_link_group {display: flex; flex-direction: row; flex-wrap: wrap; align-content: center; justify-content: space-between; align-items: center;}
+  .bo_v-move {display: block; width: 90px; height: 46px; line-height: 46px; border-radius: 5px; font-size: 16px; font-weight: 300; color: #fff; background: #999; text-align: center;}
+  .bo_v-list {display: block; width: 90px; height: 46px; line-height: 46px; border-radius: 5px; font-size: 16px; font-weight: 300; color: #fff; background: #222; text-align: center;}
+
   /* Text { */
   #bo_type-text .board_ct-tb {width: 100%; border-top: 2px solid #333; border-bottom: 2px solid #333;}
   #bo_type-text .board_ct-tb thead tr th {padding: 15px 10px; font-size: 18px; font-weight: 500; color: #0f0f0f; background: #f9f9f9;}
