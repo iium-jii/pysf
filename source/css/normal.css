@@ -194,6 +194,8 @@
 
 .sub_contents {padding: 100px 0 120px;}
 
+.sub_ct_top_lt {float: left;}
+
 .print-btn {float: right; padding: 6px 8px; border: 0; border-radius: 4px; font-size: 14px; font-weight: 400; color: #fff; background: #999;}
 .print-btn img {width: 16px; margin: -4px 7px 0 0; vertical-align: middle;}
 .sub-section {padding-bottom: 25px;}
@@ -206,7 +208,7 @@
 
 /* Board { */
   .board .bo_top {}
-  .bo_search {float: left;}
+  .bo_search {}
   .bo_search fieldset {overflow: hidden; margin: 0; padding: 0; border: 1px solid #ddd; border-radius: 3px; background: #fff;}
   .search_wrap {display: flex; flex-flow: row wrap; align-items: flex-start;}
   .search-select {min-width: 150px; height: 48px; padding: 0 20px; border: 0; border-right: 1px solid #ddd; font-size: 18px; font-weight: 400; color: #666; background: url('/source/img/select-arrow.png') no-repeat center right 20px/13px auto; appearance:none;}
