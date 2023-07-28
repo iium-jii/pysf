@@ -134,143 +134,38 @@
       </div>
 
       <div class="sub_contents">
-        <div id="bo_type-text" class="board">
+        <div id="bo_view-default" class="board_view">
           <div class="wrapper">
-            <div class="cf bo_top">
-              <form name="" action="" method="post" class="bo_search">
-                <fieldset>
-                  <legend class="sound_only">검색영역</legend>
-                  <div class="search_wrap">
-                    <select name="" id="" class="search-select" title="검색조건 선택란">
-                      <option value="" selected="selected">전체</option>
-                      <option value="">제목</option>
-                      <option value="">내용</option>		
-                      <option value="">작성자</option>
-                    </select>
-                    <label for="search-keyword" class="sound_only">검색어를 입력하세요</label>
-                    <input type="text" id="search-keyword" name="" value="" class="search-keyword" title="검색어를 입력하세요">
-                    <button type="submit" class="search-submit" title="검색">
-                      <img src="/source/img/search-btn-gray.svg" alt="">
-                    </button>
-                  </div>
-                </fieldset>
-              </form>
+            <div class="cf bo_v_top">
               <button type="button" onclick="printPage()" class="print-btn">
                 <img src="/source/img/print-white.png" alt="프린트하기">
                 PRINT
               </button>
             </div>
 
-            <div class="board_ct">
-              <table class="board_ct-tb">
-                <caption class="sound_only">공지사항 목록 - 번호, 제목, 등록일, 조회로 구성</caption>
-                <thead>
-                  <tr>
-                    <th scope="col" class="th_num">번호</th>
-                    <th scope="col" class="th_subj">제목</th>
-                    <th scope="col" class="th_date">등록일</th>
-                    <th scope="col" class="th_hit">조회</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <!-- loop { -->
-                  <tr class="tr_notice">
-                    <td class="td_num">
-                      <img src="/source/img/megaphone.png" alt="공지 알림">
-                    </td>
-                    <td class="td_subj">
-                      <a href="/sub/board_view.html">제8회 환황해포럼 생중계 이벤트</a>
-                    </td>
-                    <td class="td_date">2023.00.00</td>
-                    <td class="td_hit">9,999</td>
-                  </tr>
-                  <!-- } loop -->
-                  <tr>
-                    <td class="td_num">9</td>
-                    <td class="td_subj">
-                      <a href="/sub/board_view.html">제8회 환황해포럼 생중계 이벤트</a>
-                    </td>
-                    <td class="td_date">2023.00.00</td>
-                    <td class="td_hit">9,999</td>
-                  </tr>
-                  <tr>
-                    <td class="td_num">8</td>
-                    <td class="td_subj">
-                      <a href="/sub/board_view.html">제8회 환황해포럼 생중계 이벤트</a>
-                    </td>
-                    <td class="td_date">2023.00.00</td>
-                    <td class="td_hit">9,999</td>
-                  </tr>
-                  <tr>
-                    <td class="td_num">7</td>
-                    <td class="td_subj">
-                      <a href="/sub/board_view.html">제8회 환황해포럼 생중계 이벤트</a>
-                    </td>
-                    <td class="td_date">2023.00.00</td>
-                    <td class="td_hit">9,999</td>
-                  </tr>
-                  <tr>
-                    <td class="td_num">6</td>
-                    <td class="td_subj">
-                      <a href="/sub/board_view.html">제8회 환황해포럼 생중계 이벤트</a>
-                    </td>
-                    <td class="td_date">2023.00.00</td>
-                    <td class="td_hit">9,999</td>
-                  </tr>
-                  <tr>
-                    <td class="td_num">5</td>
-                    <td class="td_subj">
-                      <a href="/sub/board_view.html">제8회 환황해포럼 생중계 이벤트</a>
-                    </td>
-                    <td class="td_date">2023.00.00</td>
-                    <td class="td_hit">9,999</td>
-                  </tr>
-                  <tr>
-                    <td class="td_num">4</td>
-                    <td class="td_subj">
-                      <a href="/sub/board_view.html">제8회 환황해포럼 생중계 이벤트</a>
-                    </td>
-                    <td class="td_date">2023.00.00</td>
-                    <td class="td_hit">9,999</td>
-                  </tr>
-                  <tr>
-                    <td class="td_num">3</td>
-                    <td class="td_subj">
-                      <a href="/sub/board_view.html">제8회 환황해포럼 생중계 이벤트</a>
-                    </td>
-                    <td class="td_date">2023.00.00</td>
-                    <td class="td_hit">9,999</td>
-                  </tr>
-                  <tr>
-                    <td class="td_num">2</td>
-                    <td class="td_subj">
-                      <a href="/sub/board_view.html">제8회 환황해포럼 생중계 이벤트</a>
-                    </td>
-                    <td class="td_date">2023.00.00</td>
-                    <td class="td_hit">9,999</td>
-                  </tr>
-                  <tr>
-                    <td class="td_num">1</td>
-                    <td class="td_subj">
-                      <a href="/sub/board_view.html">제8회 환황해포럼 생중계 이벤트</a>
-                    </td>
-                    <td class="td_date">2023.00.00</td>
-                    <td class="td_hit">9,999</td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="pagination">
-                <a href="" class="pgn-arrow pgn-prev">
-                  <span sound_only>이전페이지</span>
+            <div class="board_v_ct">
+              <div class="bo_v_header">
+                <p class="bo_v-subj">제8회 환항해포럼 생중계 이벤트</p>
+                <p class="bo_v-date">2023.00.00</p>
+              </div>
+              <div class="bo_v_attach">
+                <!-- loop { -->
+                <a href="" class="bo_v_file">
+                  <img src="/source/img/download-icon.svg" alt="첨부파일 다운로드" class="icon">
+                  <span class="text">attached file.pdf</span>
                 </a>
-                <a href="" class="pgn-num act">1</a>
-                <a href="" class="pgn-num">2</a>
-                <a href="" class="pgn-num">3</a>
-                <a href="" class="pgn-num">4</a>
-                <a href="" class="pgn-num">5</a>
-                <a href="" class="pgn-arrow pgn-next">
-                  <span sound_only>다음페이지</span>
-                </a>
+                <!-- } loop -->
+              </div>
+              <div class="bo_v_cont">
+                게시물 내용입니다.
+              </div>
+            </div>
+
+            <div class="bo_v_bot">
+              <div class="bo_v_link_group">
+                <a href="" class="bo_v-move prev">이전글</a>
+                <a href="/sub/board_list.html" class="bo_v-list">목록</a>
+                <a href="" class="bo_v-move next">다음글</a>
               </div>
             </div>
           </div>
