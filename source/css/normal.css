@@ -182,10 +182,13 @@
 /* } Main */
 
 /* Sub { */
-.sub_top {display: flex; align-items: center; justify-content: center; width: 100%; height: 450px; background: url('/source/img/sub_top_visual-bg.jpg') no-repeat center/cover;}
+.sub_top {display: flex; align-items: center; justify-content: center; width: 100%; height: 450px; background: url('/source/img/sub_top_visual-bg.jpg') no-repeat center/cover; position: relative;}
 .sub_top .txt_box {padding-top: 90px; text-align: center;}
 .sub_top .txt-dp1 {font-size: 20px; font-weight: 400; color: #666; line-height: 1;}
 .sub_top .txt-dp2 {margin-top: 13px; font-size: 54px; font-weight: 700; color: #0f0f0f; line-height: 1;}
+
+.sub_tab {position: absolute; bottom: 0; left: 0; width: 100%;}
+.sub_tab-ul {}
 
 .sub_contents {padding: 100px 0 120px;}
 
