@@ -116,13 +116,13 @@ const fullMenu = () => {
 
   fullMenuBtn.on('click', () => {
     fullMenuBtn.toggleClass('active');
-    fullMenu.slideToggle();
+    fullMenu.slideToggle().toggleClass('active');
   });
   
-  fullMenu.on('mouseleave',function(){
-    fullMenuBtn.removeClass('active');
-    $(this).slideUp();
-  });
+  //fullMenu.on('mouseleave',function(){
+  //  fullMenuBtn.removeClass('active');
+  //  $(this).slideUp().removeClass('active');
+  //});
 }
 
 // Document ready Function
