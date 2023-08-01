@@ -249,6 +249,7 @@
   .sub-section-title-box .print-btn {position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
 
   /* Table { */
+    table caption {position: absolute; left: 0; top: 0; width: 0; height: 0; font-size: 0;}
     .table-type1 {border-top: 2px solid #333; border-bottom: 2px solid #333;}
     .table-type1 tr {border-bottom: 1px solid #ddd;}
     .table-type1 tr:last-child {border-bottom: none;}
@@ -261,6 +262,7 @@
     .table-type2 thead th {background-color: #f9f9f9; font-weight: 500; font-size: 18px; color: #0f0f0f; padding: 15.75px 5px;}
     .table-type2 thead th.time {border-right: 1px solid #ddd;}
     .table-type2 thead th.content {}
+    .table-type2 thead th.place {border-left: 1px solid #ddd;}
     .table-type2 tbody {}
     .table-type2 tbody tr {border-bottom: 1px solid #ddd;}
     .table-type2 tbody tr:last-child {border-bottom: none;}
@@ -268,6 +270,7 @@
     .table-type2 tbody td.time {text-align: center; border-right: 1px solid #ddd; font-weight: 300; font-size: 18px; color: #666;}
     .table-type2 tbody td.content {padding-left: 37px; font-weight: 300; font-size: 18px; color: #666; line-height: 1.444;}
     .table-type2 tbody td.content b {font-weight: 500; color: #333; display: block;}
+    .table-type2 tbody td.place {padding: 21px 50px; border-left: 1px solid #ddd; text-align: center;}
 
   /* } Table */
 /* } Sub */
@@ -286,7 +289,7 @@
   .board_ct {margin-top: 20px;}
 
   .pagination {display: flex; flex-flow: row wrap; justify-content: center; align-items: center; gap: 0 7px; margin-top: 20px;}
-  .pagination .pgn-num {display: block; position: relative; width: 40px; height: 40px; line-height: 40px; font-size: 18px; font-weight: 400; color: #999; background: #fff; text-align: center; transition: 0.2s ease-out;}
+  .pagination .pgn-num {display: block; position: relative; width: 40px; height: 40px; line-height: 40px; font-size: 18px; font-weight: 400; color: #999; background: transparent; text-align: center; transition: 0.2s ease-out;}
   .pagination .pgn-num:before {content: ""; display: block; position: absolute; top: 50%; left: -4px; z-index: 1; height: 15px; margin-top: -7.5px; border-left: 1px solid #ddd;}
   .pagination .pgn-num:after {content: ""; display: block; position: absolute; top: 50%; right: -4px; z-index: 1; height: 15px; margin-top: -7.5px; border-left: 1px solid #ddd;}
   .pagination .pgn-num:nth-child(1):before,
@@ -449,3 +452,26 @@
 
   .speaker-wrap02 {background-color: #fafafa; padding: 73px 0 120px;}
 /* } 초청연사 */
+
+/* 등록신청 { */
+/* } 등록신청 */
+
+/* 신청확인 { */
+/* } 신청확인 */
+
+/* 충남 관광명소 { */
+/* } 충남 관광명소 */
+
+/* 이전포럼 { */
+  #forum {padding-bottom: 0;}
+  .forum-content01 {padding-top: 37px; padding-bottom: 80px;}
+  .forum-wrap02 {background-color: #fafafa; padding: 73px 0 120px;}
+  .gallery-content {}
+  .gallery-list {font-size: 0; margin: -12.5px -10px;}
+  .gallery-item {display: inline-block; vertical-align: top; width: 25%; padding: 12.5px 10px;}
+  .gallery-link {position: relative; display: block; padding: 33%; border-radius: 5px; overflow: hidden; transition: 0.2s ease-out;}
+  .gallery-link::after {content:""; position: absolute; left: 0; top: 0; width: calc(100% - 6px); height: calc(100% - 6px); border: 3px solid transparent; transition: 0.2s ease-out;}
+  .gallery-link:hover::after {border: 3px solid var(--main-color);}
+  .gallery-link img {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100%;}
+  .gallery-content .pagination {margin-top: 30px;}
+/* } 이전포럼 */
