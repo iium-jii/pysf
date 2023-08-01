@@ -427,6 +427,7 @@
 /* } 프로그램 */
 
 /* 초청연사 { */
+  #speaker {padding-bottom: 0;}
   .speaker-title {padding-bottom: 30px;}
   .speaker-title .title {display: inline-block; font-weight: 600; font-size: 44px; color: #0f0f0f; line-height: 1;}
 

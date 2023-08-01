@@ -196,155 +196,153 @@
         </div>
       </div>
 
-      <div class="sub_contents">
-        <div id="map">
-          <div class="wrapper">
-            <div class="map-wrap">
-              <div class="sub-section">
-                <div class="sub-section-title-box">
-                  <p class="title">행사주소</p>
-                  <button type="button" onclick="printPage()" class="print-btn">
-                    <img src="/source/img/print-white.png" alt="프린트하기">
-                    PRINT
-                  </button>
+      <div id="map" class="sub_contents">
+        <div class="wrapper">
+          <div class="map-wrap">
+            <div class="sub-section">
+              <div class="sub-section-title-box">
+                <p class="title">행사주소</p>
+                <button type="button" onclick="printPage()" class="print-btn">
+                  <img src="/source/img/print-white.png" alt="프린트하기">
+                  PRINT
+                </button>
+              </div>
+              <div class="map-content01">
+                <p class="add-text">
+                  <span class="title">주소.</span>
+                  <span class="text">충남 부여군 규암면 백제문로 400 (우)33115</span>
+                </p>
+                <p class="add-text">
+                  <span class="title">전화.</span>
+                  <span class="text">041-939-1000</span>
+                </p>
+                <a href="" class="find-btn">길찾기</a>
+                <div class="map-box">
+                  <div class="map">
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1690443804851" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;"></div>
+
+                    <!--
+                      2. 설치 스크립트
+                      * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                    -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                      new daum.roughmap.Lander({
+                        "timestamp" : "1690443804851",
+                        "key" : "2foze",
+                        //"mapWidth" : "640",
+                        "mapHeight" : "500"
+                      }).render();
+                    </script>
+                  </div>
                 </div>
-                <div class="map-content01">
-                  <p class="add-text">
-                    <span class="title">주소.</span>
-                    <span class="text">충남 부여군 규암면 백제문로 400 (우)33115</span>
-                  </p>
-                  <p class="add-text">
-                    <span class="title">전화.</span>
-                    <span class="text">041-939-1000</span>
-                  </p>
-                  <a href="" class="find-btn">길찾기</a>
-                  <div class="map-box">
-                    <div class="map">
-                      <!-- * 카카오맵 - 지도퍼가기 -->
-                      <!-- 1. 지도 노드 -->
-                      <div id="daumRoughmapContainer1690443804851" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;"></div>
-
-                      <!--
-                        2. 설치 스크립트
-                        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-                      -->
-                      <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-                      <!-- 3. 실행 스크립트 -->
-                      <script charset="UTF-8">
-                        new daum.roughmap.Lander({
-                          "timestamp" : "1690443804851",
-                          "key" : "2foze",
-                          //"mapWidth" : "640",
-                          "mapHeight" : "500"
-                        }).render();
-                      </script>
+              </div>
+            </div>
+            <div class="sub-section">
+              <div class="sub-section-title-box">
+                <p class="title">자동차로 오시는 경우</p>
+              </div>
+              <div class="map-content02">
+                <ul class="map-content02-ul">
+                  <li class="i-col-0">
+                    <div class="title">서울(경부고속도로)</div>
+                    <div class="text">서울 → 경부고속도로 → 천안JC → 천안논산고속도로 → 서공주JC → 공주서천고속도로	 → 부여IC → 롯데리조트부여 (약 2시간 30분 소요)</div>
+                  </li>
+                  <li class="i-col-0">
+                    <div class="title">서울(서해안고속도로)</div>
+                    <div class="text">서울 → 서해안고속도로 → 당진JC → 당진고속도로	→ 서공주JC → 공주서천고속도로 → 부여IC → 롯데리조트부여 (약 2시간 소요)</div>
+                  </li>
+                </ul>
+                <div class="add-expl-box">
+                  ※ 소요 시간은 교통 상황에 따라 다를 수 있습니다.
+                </div>
+              </div>
+            </div>
+            <div class="sub-section">
+              <div class="sub-section-title-box">
+                <p class="title">버스로 오시는 경우</p>
+              </div>
+              <div class="map-content02">
+                <ul class="map-content02-ul">
+                  <li class="i-col-0">
+                    <div class="title">서울 출발</div>
+                    <div class="text">
+                      남부 터미널(02-551-8550) → 부여 시외버스 터미널 (약 2시간 소요) <br>
+                      동서울 터미널(02-446-8000) → 부여 시외버스 터미널 (약 2시간 40분 소요)
                     </div>
-                  </div>
+                  </li>
+                  <li class="i-col-0">
+                    <div class="title">천안 출발</div>
+                    <div class="text">
+                      천안 시외버스 터미널(041-640-6400) → 부여 시외버스 터미널 (약 2시간 소요)
+                    </div>
+                  </li>
+                  <li class="i-col-0">
+                    <div class="title">대전 출발</div>
+                    <div class="text">
+                      서부 시외버스 터미널(042-584-1615) → 부여 시외버스 터미널 (약 1시간 30분 소요)
+                    </div>
+                  </li>
+                  <li class="i-col-0">
+                    <div class="title">청주 출발</div>
+                    <div class="text">
+                      서부 시외버스 터미널(1688-4321) → 부여 시외버스 터미널 (약 3시간 10분 소요)
+                    </div>
+                  </li>
+                  <li class="i-col-0">
+                    <div class="title">농어촌버스</div>
+                    <div class="text">
+                      부여 시외버스 터미널 : 403번(부여시장) → 한국전통문화대학교 (약 20분 소요) <br>
+                      * 농어촌 버스 시간표문의 : 041-843-6092~3
+                    </div>
+                  </li>
+                </ul>
+                <div class="add-expl-box">
+                  ※ 예약 또는 기타 자세한 사항은 전화, 또는 홈페이지를 통해 확인하시기 바랍니다.
                 </div>
               </div>
-              <div class="sub-section">
-                <div class="sub-section-title-box">
-                  <p class="title">자동차로 오시는 경우</p>
-                </div>
-                <div class="map-content02">
-                  <ul class="map-content02-ul">
-                    <li class="i-col-0">
-                      <div class="title">서울(경부고속도로)</div>
-                      <div class="text">서울 → 경부고속도로 → 천안JC → 천안논산고속도로 → 서공주JC → 공주서천고속도로	 → 부여IC → 롯데리조트부여 (약 2시간 30분 소요)</div>
-                    </li>
-                    <li class="i-col-0">
-                      <div class="title">서울(서해안고속도로)</div>
-                      <div class="text">서울 → 서해안고속도로 → 당진JC → 당진고속도로	→ 서공주JC → 공주서천고속도로 → 부여IC → 롯데리조트부여 (약 2시간 소요)</div>
-                    </li>
-                  </ul>
-                  <div class="add-expl-box">
-                    ※ 소요 시간은 교통 상황에 따라 다를 수 있습니다.
-                  </div>
-                </div>
+            </div>
+            <div class="sub-section">
+              <div class="sub-section-title-box">
+                <p class="title">기차로 오시는 경우</p>
               </div>
-              <div class="sub-section">
-                <div class="sub-section-title-box">
-                  <p class="title">버스로 오시는 경우</p>
-                </div>
-                <div class="map-content02">
-                  <ul class="map-content02-ul">
-                    <li class="i-col-0">
-                      <div class="title">서울 출발</div>
-                      <div class="text">
-                        남부 터미널(02-551-8550) → 부여 시외버스 터미널 (약 2시간 소요) <br>
-                        동서울 터미널(02-446-8000) → 부여 시외버스 터미널 (약 2시간 40분 소요)
-                      </div>
-                    </li>
-                    <li class="i-col-0">
-                      <div class="title">천안 출발</div>
-                      <div class="text">
-                        천안 시외버스 터미널(041-640-6400) → 부여 시외버스 터미널 (약 2시간 소요)
-                      </div>
-                    </li>
-                    <li class="i-col-0">
-                      <div class="title">대전 출발</div>
-                      <div class="text">
-                        서부 시외버스 터미널(042-584-1615) → 부여 시외버스 터미널 (약 1시간 30분 소요)
-                      </div>
-                    </li>
-                    <li class="i-col-0">
-                      <div class="title">청주 출발</div>
-                      <div class="text">
-                        서부 시외버스 터미널(1688-4321) → 부여 시외버스 터미널 (약 3시간 10분 소요)
-                      </div>
-                    </li>
-                    <li class="i-col-0">
-                      <div class="title">농어촌버스</div>
-                      <div class="text">
-                        부여 시외버스 터미널 : 403번(부여시장) → 한국전통문화대학교 (약 20분 소요) <br>
-                        * 농어촌 버스 시간표문의 : 041-843-6092~3
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="add-expl-box">
-                    ※ 예약 또는 기타 자세한 사항은 전화, 또는 홈페이지를 통해 확인하시기 바랍니다.
-                  </div>
-                </div>
-              </div>
-              <div class="sub-section">
-                <div class="sub-section-title-box">
-                  <p class="title">기차로 오시는 경우</p>
-                </div>
-                <div class="map-content02">
-                  <ul class="map-content02-ul">
-                    <li class="i-col-0">
-                      <div class="title">서울 출발</div>
-                      <div class="text">
-                        용산역 → 논산역 (약 1시간 34분 소요) <br>
-                        용산역 → 공주역 (약 59분 소요)
-                      </div>
-                    </li>
-                    <li class="i-col-0">
-                      <div class="title">대구 출발</div>
-                      <div class="text">
-                        대구역, 동대구역 → 대전역 (약 40분 소요)
-                      </div>
-                    </li>
-                    <li class="i-col-0">
-                      <div class="title">부산 출발</div>
-                      <div class="text">
-                        부산역 → 대전역 (약 2시간 소요)
-                      </div>
-                    </li>
-                    <li class="i-col-0">
-                      <div class="title">광주 출발</div>
-                      <div class="text">
-                        광주송정역 → 논산역 (약 53분 소요) <br>
-                        광주송정역 → 공주역 (약 45분 소요)
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="add-expl-box">
-                    ※ 소요시간 기준은 가장 빠른 KTX 기준입니다. <br>
-                    ※ 하차역에서 부여 시외버스 터미널로 환승하신 후, 대중교통을 이용해 롯데리조트부여로 오시면 됩니다. <br>
-                    ※ 예약 또는 기타 자세한 사항은 우측 상단의 기차 예매 버튼, 코레일 홈페이지, 전화로 문의하시기 바랍니다.
-                  </div>
+              <div class="map-content02">
+                <ul class="map-content02-ul">
+                  <li class="i-col-0">
+                    <div class="title">서울 출발</div>
+                    <div class="text">
+                      용산역 → 논산역 (약 1시간 34분 소요) <br>
+                      용산역 → 공주역 (약 59분 소요)
+                    </div>
+                  </li>
+                  <li class="i-col-0">
+                    <div class="title">대구 출발</div>
+                    <div class="text">
+                      대구역, 동대구역 → 대전역 (약 40분 소요)
+                    </div>
+                  </li>
+                  <li class="i-col-0">
+                    <div class="title">부산 출발</div>
+                    <div class="text">
+                      부산역 → 대전역 (약 2시간 소요)
+                    </div>
+                  </li>
+                  <li class="i-col-0">
+                    <div class="title">광주 출발</div>
+                    <div class="text">
+                      광주송정역 → 논산역 (약 53분 소요) <br>
+                      광주송정역 → 공주역 (약 45분 소요)
+                    </div>
+                  </li>
+                </ul>
+                <div class="add-expl-box">
+                  ※ 소요시간 기준은 가장 빠른 KTX 기준입니다. <br>
+                  ※ 하차역에서 부여 시외버스 터미널로 환승하신 후, 대중교통을 이용해 롯데리조트부여로 오시면 됩니다. <br>
+                  ※ 예약 또는 기타 자세한 사항은 우측 상단의 기차 예매 버튼, 코레일 홈페이지, 전화로 문의하시기 바랍니다.
                 </div>
               </div>
             </div>
