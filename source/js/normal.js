@@ -107,9 +107,28 @@ const fixMenu = () => {
   });
 }
 
+/**
+ * [공통] 풀다운메뉴
+ */
+const fullMenu = () => {
+  let fullMenuBtn = $('.all-menu'),
+      fullMenu = $('.full-menu');
+
+  fullMenuBtn.on('click', () => {
+    fullMenuBtn.toggleClass('active');
+    fullMenu.slideToggle();
+  });
+  
+  fullMenu.on('mouseleave',function(){
+    fullMenuBtn.removeClass('active');
+    $(this).slideUp();
+  });
+}
+
 // Document ready Function
 $(document).ready(function(){
-  gnbOver(); // [공통] GNB 메뉴 마우스 오버
+  gnbOver();    // [공통] GNB 메뉴 마우스 오버
+  fixMenu();    // [공통] 고정메뉴 및 탑버튼 function
+  fullMenu();   // [공통] 풀다운메뉴
   //mainPromotionSl(); // [메인] 홍보영상 슬라이드
-  fixMenu(); // [공통] 고정메뉴 및 탑버튼 function
 });
