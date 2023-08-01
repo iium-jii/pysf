@@ -249,7 +249,6 @@
   .sub-section-title-box .print-btn {position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
 
   /* Table { */
-    table caption {position: absolute; left: 0; top: 0; width: 0; height: 0; font-size: 0;}
     .table-type1 {border-top: 2px solid #333; border-bottom: 2px solid #333;}
     .table-type1 tr {border-bottom: 1px solid #ddd;}
     .table-type1 tr:last-child {border-bottom: none;}
