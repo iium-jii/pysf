@@ -248,12 +248,16 @@
   .sub-section-title-box .title::before {content: ''; width: 3px; height: 23px; background-color: var(--main-color); position: absolute; top: 8px; left: 0;}
   .sub-section-title-box .print-btn {position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
 
+  .common-input {height: 45px; padding: 0 18px; border: 1px solid #e6e6e6; border-radius: 5px; font-size: 18px; font-weight: 300; color: #666;}
+  .common-input.w100p {width: 100%;}
+  .common-select {height: 45px; padding: 0 18px; background: #fff url('/source/img/select-arrow02.png') no-repeat center right 18px; border: 1px solid #e6e6e6; border-radius: 5px; font-size: 18px; font-weight: 300; color: #666; -webkit-appearance:none; -moz-appearance:none; appearance:none;}
+
   /* Table { */
-    .table-type1 {border-top: 2px solid #333; border-bottom: 2px solid #333;}
+    .table-type1 {width: 100%; border-top: 2px solid #333; border-bottom: 2px solid #333;}
     .table-type1 tr {border-bottom: 1px solid #ddd;}
     .table-type1 tr:last-child {border-bottom: none;}
-    .table-type1 tr th {border-right: 1px solid #ddd; width: 150px; background-color: #f9f9f9; font-weight: 500; font-size: 18px; color: #333; padding: 14.75px 0;}
-    .table-type1 tr td {width: calc(100% - 150px); padding: 14.75px 30px; font-weight: 300; font-size: 18px; color: #666;}
+    .table-type1 th {border-right: 1px solid #ddd; width: 150px; background-color: #f9f9f9; font-weight: 500; font-size: 18px; color: #333; padding: 14.75px 0;}
+    .table-type1 td {width: calc(100% - 150px); padding: 14.75px 30px; font-weight: 300; font-size: 18px; color: #666;}
     
     .table-type2 {width: 100%; border-top: 2px solid #333; border-bottom: 2px solid #333;}
     .table-type2 thead tr {border-bottom: 1px solid #ddd;}
@@ -451,6 +455,55 @@
 /* } 초청연사 */
 
 /* 등록신청 { */
+  .registration-table td {width: 28%; text-align: center; border-right: 1px solid #ddd;}
+  .registration-table th:last-child, .registration-table td:last-child {border-right: none;}
+
+  .registration-method {margin-top: 20px; padding: 30px 40px; border-radius: 5px; background: #fafafa; text-align: center;}
+  .registration-method-text {margin-bottom: 30px; font-size: 20px; font-weight: 400; color: #333; text-align: center;}
+  .registration-method-list {margin: -10px; font-size: 0;}
+  .registration-method-item {display: inline-block; vertical-align: middle; width: 50%; padding: 10px;}
+  .registration-method-item input[type="radio"] {display: none;}
+  .registration-method-item label {position: relative; display: block; width: 100%; height: 100%; padding: 50px 20px 45px; background: #fff; border-radius: 5px; cursor: pointer; transition: 0.2s ease-out;}
+  .registration-method-item label::after {content:""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; border: 3px solid transparent; border-radius: 5px; transition: 0.2s ease-out; box-sizing: border-box;}
+  .registration-method-img {display: flex; align-items: center; justify-content: center; width: 100%; min-height: 117px;}
+  .registration-method-txt {padding-top: 30px; font-size: 22px; font-weight: 600; color: #0f0f0f; transition: 0.2s ease-out;}
+  .registration-method-item input:checked + label {box-shadow: 5px 5px 20px rgba(0,0,0,0.05);}
+  .registration-method-item input:checked + label::after {border: 3px solid var(--main-color);}
+  .registration-method-item input:checked + label .registration-method-txt {color: var(--main-color);}
+  
+  .registration-wrap02, .registration-wrap03, .registration-wrap04 {padding-top: 45px;}
+  .registration-wrap02 .sub-section {position: relative;}
+  .registration-form-inform {position: absolute; right: 0; top: 10px; font-size: 18px; font-weight: 400; color: #666;}
+  .registration-form-inform span {color: var(--main-color);}
+  .registration-form {width: 100%; border-top: 2px solid #333; border-bottom: 2px solid #333;}
+  .registration-form-row {border-bottom: 1px solid #ddd; font-size: 0;}
+  .registration-form-row:last-child {border-bottom: none;}
+  .registration-form-inner {font-size: 0;}
+  .registration-form-inner > * {display: inline-block; vertical-align: middle;}
+  .registration-form-title {border-right: 1px solid #ddd; width: 200px; background-color: #f9f9f9; font-weight: 500; font-size: 18px; color: #333; padding: 19px 24px;}
+  .registration-form-title span {color: var(--main-color); padding-left: 3px;}
+  .registration-form-cont {width: calc(100% - 200px); padding: 10px 15px; font-size: 0;}
+  .registration-form-cont > * {font-weight: 300; font-size: 18px; color: #666;}
+  .registration-form-row_2 .registration-form-inner {display: inline-block; vertical-align: middle; width: 50%;}
+  .registration-form-cont .hyphen {display: inline-block; width: 40px; font-size: 18px; font-weight: 300; color: #666; text-align: center;}
+  .registration-form-cont .at {display: inline-block; width: 48px; font-size: 18px; font-weight: 300; color: #666; text-align: center;}
+  .registration-form-tel .common-select, 
+  .registration-form-tel .common-input {width: calc((100% - 80px) / 3);}
+  .registration-form-mail .common-input {width: 30%;}
+  .registration-form-mail .common-select {width: calc(70% - 48px);}
+  .registration-form-radio {display: inline-block; vertical-align: middle; margin-right: 30px;}
+  .registration-form-radio input[type="radio"] {display: none;}
+  .registration-form-radio label {position: relative; padding-left: 37px; cursor: pointer;}
+  .registration-form-radio label::before {content:""; width: 28px; height: 28px; border: 1px solid #e6e6e6; border-radius: 50%; position: absolute; left: 0; top: -4px;}
+  .registration-form-radio label::after {content:""; width: 12px; height: 12px; background: #e6e6e6; border-radius: 50%; position: absolute; left: 9px; top: 5px;}
+  .registration-form-radio input:checked + label::before {border: 1px solid var(--main-color);}
+  .registration-form-radio input:checked + label::after {background: var(--main-color);}
+  .registration-form-sch {width: 90px; height: 45px; margin-left: 5px; background: #999; border: none; border-radius: 5px; font-size: 16px; font-weight: 300; color: #fff; text-align: center;}
+  .registration-form-addr {display: table; width: 100%;}
+  .registration-form-addr > * {display: table-cell;}
+  .registration-form-addr #schLayer {display:none;position:fixed;overflow:hidden;z-index:1;-webkit-overflow-scrolling:touch;}
+  .registration-form-addr #address {margin-top: 5px; width: 40%;}
+  .registration-form-addr #detailAddress {width: calc(60% - 5px); margin-top: 5px; margin-left: 5px;}
 /* } 등록신청 */
 
 /* 신청확인 { */
@@ -468,11 +521,11 @@
   .shortcut-list {font-size: 0; margin: -10px;}
   .shortcut-item {display: inline-block; vertical-align: top; width: 20%; padding: 10px;}
   .shortcut-link {position: relative; display: block; padding-bottom: 18px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden; text-align: center; transition: 0.2s ease-out;}
-  .shortcut-link::after {content:""; position: absolute; left: 0; top: 0; width: calc(100% - 4px); height: calc(100% - 4px); border: 2px solid transparent; transition: 0.2s ease-out;}
+  .shortcut-link::after {content:""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; border-radius:3px; border: 2px solid transparent; transition: 0.2s ease-out; box-sizing: border-box;}
   .shortcut-img {display: flex; align-items: center; justify-content: center; height: 155px;}
   .shortcut-link img {max-height: 100%;}
   .shortcut-text {font-size: 20px; font-weight: 300; color: #333;}
-  .shortcut-link:hover {border: 1px solid var(--main-color); box-shadow: 0 0 15px rgba(0,0,0,0.1);}
+  .shortcut-link:hover {border: 1px solid var(--main-color); box-shadow: 0 0 15px rgba(0,0,0,0.05);}
   .shortcut-link:hover::after {border: 2px solid var(--main-color);}
   .shortcut-link:hover .shortcut-text {font-weight: 500; color: var(--main-color);}
 /* } 충남 관광명소 */
@@ -485,7 +538,7 @@
   .gallery-list {font-size: 0; margin: -12.5px -10px;}
   .gallery-item {display: inline-block; vertical-align: top; width: 25%; padding: 12.5px 10px;}
   .gallery-link {position: relative; display: block; padding: 33%; border-radius: 5px; overflow: hidden; transition: 0.2s ease-out;}
-  .gallery-link::after {content:""; position: absolute; left: 0; top: 0; width: calc(100% - 6px); height: calc(100% - 6px); border: 3px solid transparent; transition: 0.2s ease-out;}
+  .gallery-link::after {content:""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; border: 3px solid transparent; transition: 0.2s ease-out; box-sizing: border-box; border-radius: 5px;}
   .gallery-link:hover::after {border: 3px solid var(--main-color);}
   .gallery-link img {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100%;}
   .gallery-content .pagination {margin-top: 30px;}

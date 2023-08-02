@@ -198,56 +198,207 @@
 
       <div id="registration" class="sub_contents">
         <div class="wrapper">
-          <div class="registration-wrap">
-            <div class="sub-section">
-              <div class="sub-section-title-box">
-                <p class="title">제9회 환황해포럼 참여방법</p>
-                <button type="button" onclick="printPage()" class="print-btn">
-                  <img src="/source/img/print-white.png" alt="프린트하기">
-                  PRINT
-                </button>
-              </div>
-              <div class="registration-content">
-                <table class="tbl01">
-                  <caption class="sound_only">제9회 환황해포럼 참여방법 - 현장, 화상, 온라인 스트리밍에 따른 등록필요 여부, 제공범위, 유의사항으로 구성</caption>
-                  <tr>
-                    <th></th>
-                    <th>현장</th>
-                    <th>화상</th>
-                    <th>온라인 스트리밍</th>
-                  </tr>
-                  <tr>
-                    <th>등록필요 여부</th>
-                    <td>등록 필요</td>
-                    <td>등록 필요</td>
-                    <td>등록 불필요</td>
-                  </tr>
-                  <tr>
-                    <th>제공범위</th>
-                    <td>
-                      현장 포럼 참가 가능 <br>오찬 제공
-                    </td>
-                    <td>
-                      화상으로 포럼 참여 가능 <br>행사 시, 화상회의 관련사항을 등록정보에기반하여 전달 예정
-                    </td>
-                    <td>
-                      포럼 당일, 홈페이지를 통해 생중계 영상시청 가능
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>유의사항</th>
-                    <td>
-                      현장 참가가능 인원이 한정되어 있어 <br>일정인원 초과 시, 등록이 제한 될 수 있습니다.
-                    </td>
-                    <td>
-                      온라인 화상회의 참석가능 인원이 한정되어 있어 <br>일정 인원 초과 시, 등록이 제한 될 수 있습니다.
-                    </td>
-                    <td></td>
-                  </tr>
-                </table>
+          <form action="">
+            <div class="registration-wrap01">
+              <div class="sub-section">
+                <div class="sub-section-title-box">
+                  <p class="title">제9회 환황해포럼 참여방법</p>
+                  <button type="button" onclick="printPage()" class="print-btn">
+                    <img src="/source/img/print-white.png" alt="프린트하기">
+                    PRINT
+                  </button>
+                </div>
+                <div class="registration-content01">
+                  <table class="registration-table table-type1">
+                    <caption class="sound_only">제9회 환황해포럼 참여방법 - 현장, 화상, 온라인 스트리밍에 따른 등록필요 여부, 제공범위, 유의사항으로 구성</caption>
+                    <tr>
+                      <th></th>
+                      <th>현장</th>
+                      <th>화상</th>
+                      <th>온라인 스트리밍</th>
+                    </tr>
+                    <tr>
+                      <th>등록필요 여부</th>
+                      <td data-th="현장">등록 필요</td>
+                      <td data-th="현장">등록 필요</td>
+                      <td data-th="현장">등록 불필요</td>
+                    </tr>
+                    <tr>
+                      <th>제공범위</th>
+                      <td data-th="화상">
+                        현장 포럼 참가 가능 <br>오찬 제공
+                      </td>
+                      <td data-th="화상">
+                        화상으로 포럼 참여 가능 <br>행사 시, 화상회의 관련사항을 등록정보에기반하여 전달 예정
+                      </td>
+                      <td data-th="화상">
+                        포럼 당일, 홈페이지를 통해 생중계 영상시청 가능
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>유의사항</th>
+                      <td data-th="온라인 스트리밍">
+                        현장 참가가능 인원이 한정되어 있어 <br>일정인원 초과 시, 등록이 제한 될 수 있습니다.
+                      </td>
+                      <td data-th="온라인 스트리밍">
+                        온라인 화상회의 참석가능 인원이 한정되어 있어 <br>일정 인원 초과 시, 등록이 제한 될 수 있습니다.
+                      </td>
+                      <td data-th="온라인 스트리밍"></td>
+                    </tr>
+                  </table>
+                  <div class="registration-method">
+                    <p class="registration-method-text">위의 내용을 확인하신 후 참여방법을 선택해주세요.</p>
+                    <div class="registration-method-list">
+                      <div class="registration-method-item">
+                        <input type="radio" name="regMethod" id="regMethod01">
+                        <label for="regMethod01">
+                          <div class="registration-method-img">
+                            <img src="/source/img/method-img01.png" alt="온라인 아이콘">
+                          </div>
+                          <p class="registration-method-txt">온라인 참석</p>
+                        </label>
+                      </div>
+                      <div class="registration-method-item">
+                        <input type="radio" name="regMethod" id="regMethod02">
+                        <label for="regMethod02">
+                          <div class="registration-method-img">
+                            <img src="/source/img/method-img02.png" alt="오프라인 아이콘">
+                          </div>
+                          <p class="registration-method-txt">오프라인 참석</p>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="registration-wrap02">
+              <div class="sub-section">
+                <div class="sub-section-title-box">
+                  <p class="title">인적사항</p>
+                </div>
+                <div class="registration-content02">
+                  <p class="registration-form-inform"><span>*</span> 표시는 필수입력 사항입니다.</p>
+                  <ul class="registration-form">
+                    <li class="registration-form-row registration-form-row_2">
+                      <div class="registration-form-inner">
+                        <div class="registration-form-title">이름(국문)<span>*</span></div>
+                        <div class="registration-form-cont">
+                          <input type="text" name="" id="" class="common-input w100p">
+                        </div>
+                      </div>
+                      <div class="registration-form-inner">
+                        <div class="registration-form-title">이름(영문)<span>*</span></div>
+                        <div class="registration-form-cont">
+                          <input type="text" name="" id="" class="common-input w100p">
+                        </div>
+                      </div>
+                    </li>
+                    <li class="registration-form-row registration-form-row_2">
+                      <div class="registration-form-inner">
+                        <div class="registration-form-title">소속(국문)<span>*</span></div>
+                        <div class="registration-form-cont">
+                          <input type="text" name="" id="" class="common-input w100p">
+                        </div>
+                      </div>
+                      <div class="registration-form-inner">
+                        <div class="registration-form-title">소속(영문)<span>*</span></div>
+                        <div class="registration-form-cont">
+                          <input type="text" name="" id="" class="common-input w100p">
+                        </div>
+                      </div>
+                    </li>
+                    <li class="registration-form-row registration-form-row_2">
+                      <div class="registration-form-inner">
+                        <div class="registration-form-title">직위</div>
+                        <div class="registration-form-cont">
+                          <input type="text" name="" id="" class="common-input w100p">
+                        </div>
+                      </div>
+                      <div class="registration-form-inner">
+                        <div class="registration-form-title">국적<span>*</span></div>
+                        <div class="registration-form-cont">
+                          <input type="text" name="" id="" class="common-input w100p">
+                        </div>
+                      </div>
+                    </li>
+                    <li class="registration-form-row registration-form-row_2">
+                      <div class="registration-form-inner registration-form-tel">
+                        <div class="registration-form-title">연락처<span>*</span></div>
+                        <div class="registration-form-cont">
+                          <select name="" id="" class="common-select">
+                            <option value="">010</option>
+                          </select>
+                          <span class="hyphen">-</span>
+                          <input type="text" name="" id="" class="common-input">
+                          <span class="hyphen">-</span>
+                          <input type="text" name="" id="" class="common-input">
+                        </div>
+                      </div>
+                      <div class="registration-form-inner registration-form-mail">
+                        <div class="registration-form-title">이메일<span>*</span></div>
+                        <div class="registration-form-cont">
+                          <input type="text" name="" id="" class="common-input">
+                          <span class="at">@</span>
+                          <select name="" id="" class="common-select">
+                            <option value="">선택하세요</option>
+                          </select>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="registration-form-row">
+                      <div class="registration-form-inner">
+                        <div class="registration-form-title">성별<span>*</span></div>
+                        <div class="registration-form-cont">
+                          <div class="registration-form-radio">
+                            <input type="radio" name="regSex" id="regSex01">
+                            <label for="regSex01">남자</label>
+                          </div>
+                          <div class="registration-form-radio">
+                            <input type="radio" name="regSex" id="regSex02">
+                            <label for="regSex02">여자</label>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="registration-form-row">
+                      <div class="registration-form-inner registration-form-addr">
+                        <div class="registration-form-title">주소</div>
+                        <div class="registration-form-cont">
+                          <input type="text" name="" id="postcode" class="common-input">
+                          <button type="button" class="registration-form-sch" onclick="execDaumPostcode()">주소검색</button><br/>
+                          <input type="text" name="" id="address" class="common-input">">
+                          <input type="text" name="" id="detailAddress" class="common-input">
+                          <div id="schLayer">
+                            <img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnCloseLayer" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" onclick="closeDaumPostcode()" alt="닫기 버튼">
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="registration-wrap03">
+              <div class="sub-section">
+                <div class="sub-section-title-box">
+                  <p class="title">참여 프로그램 선택</p>
+                </div>
+                <div class="registration-content03">
+                </div>
+              </div>
+            </div>
+            <div class="registration-wrap04">
+              <div class="sub-section">
+                <div class="sub-section-title-box">
+                  <p class="title">약관동의</p>
+                </div>
+                <div class="registration-content04">
+                </div>
+              </div>
+            </div>
+            <button type="submit">등록하기</button>
+          </form>
         </div>
       </div>
     </div>
@@ -310,6 +461,90 @@
       </div>
     </div>
     <!-- } Footer -->
-    
+
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script>
+        var element_layer = document.getElementById('schLayer');
+
+        function closeDaumPostcode() {
+            // iframe을 넣은 element를 안보이게 한다.
+            element_layer.style.display = 'none';
+        }
+
+        function execDaumPostcode() {
+            new daum.Postcode({
+                oncomplete: function(data) {
+                    var addr = ''; // 주소 변수
+                    var extraAddr = ''; // 참고항목 변수
+
+                    //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                    if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                        addr = data.roadAddress;
+                    } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                        addr = data.jibunAddress;
+                    }
+
+                    // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+                    if(data.userSelectedType === 'R'){
+                        // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                        // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                        if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                            extraAddr += data.bname;
+                        }
+                        // 건물명이 있고, 공동주택일 경우 추가한다.
+                        if(data.buildingName !== '' && data.apartment === 'Y'){
+                            extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                        }
+                        // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                        if(extraAddr !== ''){
+                            extraAddr = ' (' + extraAddr + ')';
+                        }
+                        // 조합된 참고항목을 해당 필드에 넣는다.
+                        //document.getElementById("extraAddress").value = extraAddr;
+                    
+                    }
+                    // else {
+                    //     document.getElementById("extraAddress").value = '';
+                    // }
+
+                    // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                    document.getElementById('postcode').value = data.zonecode;
+                    document.getElementById("address").value = addr;
+                    // 커서를 상세주소 필드로 이동한다.
+                    document.getElementById("detailAddress").focus();
+
+                    // iframe을 넣은 element를 안보이게 한다.
+                    // (autoClose:false 기능을 이용한다면, 아래 코드를 제거해야 화면에서 사라지지 않는다.)
+                    element_layer.style.display = 'none';
+                },
+                width : '100%',
+                height : '100%',
+                maxSuggestItems : 5
+            }).embed(element_layer);
+
+            // iframe을 넣은 element를 보이게 한다.
+            element_layer.style.display = 'block';
+
+            // iframe을 넣은 element의 위치를 화면의 가운데로 이동시킨다.
+            initLayerPosition();
+        }
+
+        // 브라우저의 크기 변경에 따라 레이어를 가운데로 이동시키고자 하실때에는
+        // resize이벤트나, orientationchange이벤트를 이용하여 값이 변경될때마다 아래 함수를 실행 시켜 주시거나,
+        // 직접 element_layer의 top,left값을 수정해 주시면 됩니다.
+        function initLayerPosition(){
+            var width = 300; //우편번호서비스가 들어갈 element의 width
+            var height = 400; //우편번호서비스가 들어갈 element의 height
+            var borderWidth = 5; //샘플에서 사용하는 border의 두께
+
+            // 위에서 선언한 값들을 실제 element에 넣는다.
+            element_layer.style.width = width + 'px';
+            element_layer.style.height = height + 'px';
+            element_layer.style.border = borderWidth + 'px solid';
+            // 실행되는 순간의 화면 너비와 높이 값을 가져와서 중앙에 뜰 수 있도록 위치를 계산한다.
+            element_layer.style.left = (((window.innerWidth || document.documentElement.clientWidth) - width)/2 - borderWidth) + 'px';
+            element_layer.style.top = (((window.innerHeight || document.documentElement.clientHeight) - height)/2 - borderWidth) + 'px';
+        }
+    </script>
   </body>
 </html>
