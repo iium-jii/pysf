@@ -256,20 +256,18 @@
     .table-type1 tr td {width: calc(100% - 150px); padding: 14.75px 30px; font-weight: 300; font-size: 18px; color: #666;}
     
     .table-type2 {width: 100%; border-top: 2px solid #333; border-bottom: 2px solid #333;}
-    .table-type2 thead {}
     .table-type2 thead tr {border-bottom: 1px solid #ddd;}
-    .table-type2 thead th {background-color: #f9f9f9; font-weight: 500; font-size: 18px; color: #0f0f0f; padding: 15.75px 5px;}
-    .table-type2 thead th.time {border-right: 1px solid #ddd;}
-    .table-type2 thead th.content {}
-    .table-type2 thead th.place {border-left: 1px solid #ddd;}
-    .table-type2 tbody {}
+    .table-type2 th {background-color: #f9f9f9; font-weight: 500; font-size: 18px; color: #0f0f0f; padding: 15.75px 5px;}
+    .table-type2 th.time {border-right: 1px solid #ddd;}
+    .table-type2 th.content {}
+    .table-type2 th.place {border-left: 1px solid #ddd;}
     .table-type2 tbody tr {border-bottom: 1px solid #ddd;}
     .table-type2 tbody tr:last-child {border-bottom: none;}
-    .table-type2 tbody td {padding: 21px 5px;}
-    .table-type2 tbody td.time {text-align: center; border-right: 1px solid #ddd; font-weight: 300; font-size: 18px; color: #666;}
-    .table-type2 tbody td.content {padding-left: 37px; font-weight: 300; font-size: 18px; color: #666; line-height: 1.444;}
-    .table-type2 tbody td.content b {font-weight: 500; color: #333; display: block;}
-    .table-type2 tbody td.place {padding: 21px 50px; border-left: 1px solid #ddd; text-align: center;}
+    .table-type2 td {padding: 21px 5px;}
+    .table-type2 td.time {text-align: center; border-right: 1px solid #ddd; font-weight: 300; font-size: 18px; color: #666;}
+    .table-type2 td.content {padding-left: 37px; font-weight: 300; font-size: 18px; color: #666; line-height: 1.444;}
+    .table-type2 td.content b {font-weight: 500; color: #333; display: block;}
+    .table-type2 td.place {padding: 21px 50px; border-left: 1px solid #ddd; text-align: center;}
 
   /* } Table */
 /* } Sub */
@@ -459,6 +457,24 @@
 /* } 신청확인 */
 
 /* 충남 관광명소 { */
+  .chungnam-link {position: relative; display: block; padding: 16px 22px; background: #dc3400; border-radius: 5px;}
+  .chungnam-link::after {content:""; position: absolute; right: 26px; top: 50%; width: 14px; height: 12px; background: url(/source/img/icon-ytb-right.png) no-repeat center center; margin-top: -6px; transition: 0.2s ease-out;}
+  .chungnam-link > * {display: inline-block; vertical-align: middle;}
+  .chungnam-link > img {margin-right: 12px;}
+  .chungnam-link > p {font-size: 20px; font-weight: 500; color: #fff;}
+  .chungnam-link:hover::after {right: 19px;}
+
+  .chungnam-content02 {padding-top: 37px;}
+  .shortcut-list {font-size: 0; margin: -10px;}
+  .shortcut-item {display: inline-block; vertical-align: top; width: 20%; padding: 10px;}
+  .shortcut-link {position: relative; display: block; padding-bottom: 18px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden; text-align: center; transition: 0.2s ease-out;}
+  .shortcut-link::after {content:""; position: absolute; left: 0; top: 0; width: calc(100% - 4px); height: calc(100% - 4px); border: 2px solid transparent; transition: 0.2s ease-out;}
+  .shortcut-img {display: flex; align-items: center; justify-content: center; height: 155px;}
+  .shortcut-link img {max-height: 100%;}
+  .shortcut-text {font-size: 20px; font-weight: 300; color: #333;}
+  .shortcut-link:hover {border: 1px solid var(--main-color); box-shadow: 0 0 15px rgba(0,0,0,0.1);}
+  .shortcut-link:hover::after {border: 2px solid var(--main-color);}
+  .shortcut-link:hover .shortcut-text {font-weight: 500; color: var(--main-color);}
 /* } 충남 관광명소 */
 
 /* 이전포럼 { */
