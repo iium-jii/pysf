@@ -270,7 +270,7 @@
   .common-checkbox input:checked + label::before {border: 1px solid var(--main-color); background: var(--main-color);}
   .common-checkbox input:checked + label::after {background: url(/source/img/icon-check-active.png) no-repeat center center;}
   
-  .common-btn {position: relative; width: 170px; height: 46px; padding: 0 40px 0 20px; border-radius: 5px; border: none; background: #222 url('/source/img/icon-ytb-right.png') no-repeat center right 20px; text-align: left; font-size: 16px; font-weight: 300; color: #fff; transition: 0.2s ease-out;}
+  .common-btn {position: relative; display: inline-block; width: 170px; height: 46px; line-height: 46px; padding: 0 40px 0 20px; border-radius: 5px; border: none; background: #222 url('/source/img/icon-ytb-right.png') no-repeat center right 20px; text-align: left; font-size: 16px; font-weight: 300; color: #fff; transition: 0.2s ease-out;}
   .common-btn:hover {background-position: center right 15px;}
 
   /* Table { */
@@ -539,6 +539,21 @@
 /* } 등록신청 */
 
 /* 신청확인 { */
+  .check-inform {display: block; padding: 23px; font-size: 18px; font-weight: 400; color: #fff; background: var(--main-color); text-align: center; border-radius: 5px 5px 0 0;}
+  .check-form {margin-bottom: 40px; padding: 26px; background: #fafafa; text-align: center; border-radius: 0 0 5px 5px;}
+  .check-form-inner {display: inline-block; vertical-align: middle; width: 568px; max-width: 100%;}
+  .check-form-row:not(:last-child) {margin-bottom: 15px;}
+  .check-form-title {padding-bottom: 4px; text-align: left; font-size: 18px; font-weight: 500; color: #0f0f0f;}
+  .check-form-cont {font-size: 0;}
+  .check-form-cont .hyphen {display: inline-block; vertical-align: middle; width: 40px; font-size: 18px; font-weight: 300; color: #666; text-align: center;}
+  .check-form-row-tel .check-form-cont > * {vertical-align: middle;}
+  .check-form-row-tel .common-select, .check-form-row-tel .common-input {width: calc((100% - 80px) / 3);}
+  .check-form-sch {width: 90px; height: 45px; background: #999; font-size: 16px; font-weight: 300; color: #fff; text-align: center; border: none; border-radius: 5px;}
+
+  .check-result-table {text-align: center;}
+  .check-result-table .td-empty {padding-top: 33px; padding-bottom: 33px; font-size: 18px; font-weight: 300; color: #666;}
+
+  .check-form-btn-wrap {margin-top: 20px; text-align: center;}
 /* } 신청확인 */
 
 /* 충남 관광명소 { */
