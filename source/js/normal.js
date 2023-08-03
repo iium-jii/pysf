@@ -125,10 +125,38 @@ const fullMenu = () => {
   //});
 }
 
+/**
+ * [이전포럼] 행사갤러리 팝업
+ */
+const popup = () => {
+  let gallery = $('.gallery-link'),
+      popupWrap = $('#popup'),
+      popupImg = $('#popup-img');
+      
+  gallery.on('click', function() {
+    let src = $(this).find('img').attr('src');
+    popupWrap.append(
+      $('<img>').attr({'src': src, 'id':'popup-img'})
+    ).animate({opacity:'show'}, 300);
+
+    popupImg.on('load', function () {
+      let documentHeight = popupWrap.height();
+      let imgHeight = popupImg.height();
+      popupImg.css('margin-top', (documentHeight - imgHeight) / 2);
+    });			
+  });
+
+  popupWrap.on('click', function() {
+    $(this).hide();
+    popupWrap.find('img').remove();
+  });
+}
+
 // Document ready Function
 $(document).ready(function(){
   gnbOver();    // [공통] GNB 메뉴 마우스 오버
   fixMenu();    // [공통] 고정메뉴 및 탑버튼 function
   fullMenu();   // [공통] 풀다운메뉴
   //mainPromotionSl(); // [메인] 홍보영상 슬라이드
+  popup();      // [이전포럼] 행사갤러리 팝업
 });

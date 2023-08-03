@@ -584,9 +584,12 @@
   .gallery-content {}
   .gallery-list {font-size: 0; margin: -12.5px -10px;}
   .gallery-item {display: inline-block; vertical-align: top; width: 25%; padding: 12.5px 10px;}
-  .gallery-link {position: relative; display: block; padding: 33%; border-radius: 5px; overflow: hidden; transition: 0.2s ease-out;}
+  .gallery-link {position: relative; display: block; padding: 33%; border-radius: 5px; overflow: hidden; transition: 0.2s ease-out; cursor: pointer;}
   .gallery-link::after {content:""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; border: 3px solid transparent; transition: 0.2s ease-out; box-sizing: border-box; border-radius: 5px;}
   .gallery-link:hover::after {border: 3px solid var(--main-color);}
   .gallery-link img {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100%;}
   .gallery-content .pagination {margin-top: 30px;}
+
+  #popup {width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; text-align: center; padding: 3% 10px 10px; background-color: rgba(0, 0, 0, 0.5); z-index: 10001; cursor: pointer; box-sizing: border-box; display: none;}
+  #popup img {max-width: 100%; max-height: 100%; margin: 302.461px auto 0px; box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 6px;}
 /* } 이전포럼 */
