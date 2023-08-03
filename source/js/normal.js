@@ -118,11 +118,6 @@ const fullMenu = () => {
     fullMenuBtn.toggleClass('active');
     fullMenu.slideToggle().toggleClass('active');
   });
-  
-  //fullMenu.on('mouseleave',function(){
-  //  fullMenuBtn.removeClass('active');
-  //  $(this).slideUp().removeClass('active');
-  //});
 }
 
 /**
@@ -132,7 +127,7 @@ const popup = () => {
   let gallery = $('.gallery-link'),
       popupWrap = $('#popup'),
       popupImg = $('#popup-img');
-      
+
   gallery.on('click', function() {
     let src = $(this).find('img').attr('src');
     popupWrap.append(
