@@ -1,9 +1,44 @@
 @media screen and (max-width:1700px){
+  /* common */
   .wrapper {width: 100%; padding-left: 50px; padding-right: 50px;}
+
 } /*@media End*/
 
-@media screen and (max-width:1290px){
+@media screen and (max-width:1440px){
+  /* common */
+  .wrapper {padding-left: 30px; padding-right: 30px;}
+
+  /* Fix Menu */
+  .fix-menu {right: 30px; bottom: 30px;}
+
+  /* Header */
+  .header .wrapper {padding: 0 30px;}
+  .gnb-ul > li {padding: 0 30px;}
+  .full-menu-box {padding: 30px 0 0 30px;}
+  .full-menu-box-half {padding: 0;}
+  .full-menu-box-half .full-menu-title {padding: 30px 30px 35px;}
+  .full-menu-list {padding: 10px 0;}
+
   
+} /*@media End*/
+
+@media screen and (max-width:1280px){
+  /* Header */
+  .gnb {display: none;}
+  .full-menu {position: absolute; right: -100%; top: 100%; display: block; width: 500px; max-width: 100%; height: 100vh; transition: 0.5s ease-out;}
+  .full-menu.active {right: 0; transition: 0.3s ease-out;}
+  .full-menu-wrap {display: block; padding-top: 30px;}
+  .full-menu-box {display: block; width: 100%; border: none; padding: 0;}
+  .full-menu-inner {padding: 10px 35px;}
+  .full-menu-title {position: relative;}
+  .full-menu-title:after {content:""; width: 13px; height: 8px; background: url(/source/img/select-arrow.png) no-repeat center center; position: absolute; right: 0; top: 50%; margin-top: -4px; transition: 0.2s ease-out;}
+  .full-menu-box-half .full-menu-inner:first-child {border-bottom: none;}
+  .full-menu-box-half .full-menu-title {padding: 0;}
+  .full-menu-box-half .full-menu-title:after {display: none;}
+  .full-menu-inner.active .full-menu-title:after {transform: rotate(-180deg);}
+  .full-menu-list {display: none;}
+  .full-menu-box.active .full-menu-list {display: block;}
+
 } /*@media End*/
 
 @media screen and (max-width:1023px){
@@ -11,6 +46,17 @@
 } /*@media End*/
 
 @media screen and (max-width:767px){
+  /* common */
+  .wrapper {padding-left: 20px; padding-right: 20px;}
+
+  /* Header */
+  .header .wrapper {padding: 0 20px;}
+  .hd-wrap {height: 70px;}
+  .logo img {height: 45px;}
+  .all-menu {margin-left: 18px;}
+  .hd-right-menu-item .lang-btn {width: auto; height: 38px; padding: 0 13px;}
+  .hd-right-menu-item .lang-btn span {font-size: 13px;}
+  .hd-right-menu-item .lang-btn span:first-child {margin-bottom: -3px;}
   
 } /*@media End*/
 
