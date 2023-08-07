@@ -67,14 +67,14 @@
   .full-menu-link > a {position: relative; font-size: 18px; font-weight: 400; color: #666; padding-right: 15px;}
   .full-menu-link > a:after {content:""; width: 14px; height: 12px; background: url('../img/icon-ytb-right.png') no-repeat center center; position: absolute; right: -15px; top: 50%; transform: translateY(-50%); opacity: 0;}
 
-  .full-menu-box:hover {background: var(--main-color);}
-  .full-menu-box:hover .full-menu-title {color: #ffe4c5;}
-  .full-menu-box:hover .full-menu-link a {color: #ffe4c6;}
-  .full-menu-box:hover .full-menu-link a:hover {color: #fff; font-weight: 500; padding-right: 25px;}
-  .full-menu-box:hover .full-menu-link a:hover:after {opacity: 1; right: 0;}
-  .full-menu-box.full-menu-box-half:hover {background: #fff;}
-  .full-menu-box.full-menu-box-half:hover .full-menu-title {color: #0f0f0f;}
-  .full-menu-box.full-menu-box-half .full-menu-title:hover {background: var(--main-color); color: #ffe4c5;}
+  .fullmenu.pc .full-menu-box:hover {background: var(--main-color);}
+  .fullmenu.pc .full-menu-box:hover .full-menu-title {color: #ffe4c5;}
+  .fullmenu.pc .full-menu-box:hover .full-menu-link a {color: #ffe4c6;}
+  .fullmenu.pc .full-menu-box:hover .full-menu-link a:hover {color: #fff; font-weight: 500; padding-right: 25px;}
+  .fullmenu.pc .full-menu-box:hover .full-menu-link a:hover:after {opacity: 1; right: 0;}
+  .fullmenu.pc .full-menu-box.full-menu-box-half:hover {background: #fff;}
+  .fullmenu.pc .full-menu-box.full-menu-box-half:hover .full-menu-title {color: #0f0f0f;}
+  .fullmenu.pc .full-menu-box.full-menu-box-half .full-menu-title:hover {background: var(--main-color); color: #ffe4c5;}
 /* } Header */
 
 /* Fix Menu { */
@@ -97,7 +97,7 @@
   .ft-host-title {font-weight: 300; font-size: 16px; color: #999; margin-right: 17px;}
   .ft-host-ul {margin: -12px;}
   .ft-host-ul li {padding: 12px;}
-  .ft-host-ul li a {display: block;}
+  .ft-host-ul li a {display: block; font-size: 0;}
 
   .ft-bot {padding: 26px 0 23px;}
   .ft-bot-ct {display: flex; justify-content: space-between; align-items: flex-end;}

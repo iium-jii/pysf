@@ -113,22 +113,27 @@ const fixMenu = () => {
 const fullMenu = () => {
   let fullMenuBtn = $('.all-menu'),
       fullMenuWrap = $('.full-menu');
-  	
-  fullMenuBtn.removeClass('active');
-  fullMenuWrap.removeClass('active');
 
-  fullMenuBtn.on('click', () => {
-    fullMenuBtn.toggleClass('active');
-    fullMenuWrap.slideToggle().toggleClass('active');
-  });
-  
-  //$(window).resize(function() {
-  //  if($(window).width() > 1280) {
-  //    fullMenuWrap.addClass('pc').removeClass('mo');
-  //  } else {
-  //    fullMenuWrap.addClass('mo').removeClass('pc');
-  //  }
-  //});
+  $(window).resize(function(){
+    fullMenuBtn.removeClass('active');
+    fullMenuWrap.removeClass('active').slideUp();
+
+    let width = window.innerWidth;
+    if(width > 1280){
+      fullMenuWrap.addClass('pc').removeClass('mo');
+      fullMenuBtn.on('click', () => {
+        fullMenuBtn.toggleClass('active');
+        fullMenuWrap.toggleClass('active').slideToggle();
+      });
+    } else {
+      fullMenuWrap.addClass('mo').removeClass('pc');
+      fullMenuBtn.on('click', () => {
+        fullMenuBtn.toggleClass('active');
+        fullMenuWrap.toggleClass('active');
+        $('html, body').toggleClass('scrollLock');
+      });
+    }
+  }).resize();
 }
 
 /**
@@ -137,8 +142,9 @@ const fullMenu = () => {
 const mobileMenu = () => {
   let menuLink = $('.full-menu-title');
   	
-  menuLink.on('click', () => {
-    $(this).parents('.full-menu-box').addClass('active');
+  menuLink.on('click', function() {
+    $(this).parent('.full-menu-inner').toggleClass('active');
+    $(this).siblings('.full-menu-list').toggle();
   });
 }
 
@@ -174,6 +180,7 @@ $(document).ready(function(){
   gnbOver();    // [공통] GNB 메뉴 마우스 오버
   fixMenu();    // [공통] 고정메뉴 및 탑버튼 function
   fullMenu();   // [공통] 풀다운메뉴
+  mobileMenu(); // [곧통] 모바일메뉴
   // mainPromotionSl(); // [메인] 홍보영상 슬라이드
   popup();      // [이전포럼] 행사갤러리 팝업
 });

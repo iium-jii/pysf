@@ -23,10 +23,14 @@
 } /*@media End*/
 
 @media screen and (max-width:1280px){
+  .scrollLock {overflow: hidden;}
+
   /* Header */
   .gnb {display: none;}
-  .full-menu {position: absolute; right: -100%; top: 100%; display: block; width: 500px; max-width: 100%; height: 100vh; transition: 0.5s ease-out;}
-  .full-menu.active {right: 0; transition: 0.3s ease-out;}
+  .full-menu {position: absolute; right: -100%; top: 100%; display: block !important; width: 500px; max-width: 100%; height: calc(100vh - 90px); transition: 0.4s ease-out;}
+  .full-menu::before {display: none; opacity: 0;}
+  .full-menu.active {display: block; right: 0; transition: 0.3s ease-out; overflow: auto;}
+  .full-menu.active::before {display: block; opacity: 1;}
   .full-menu-wrap {display: block; padding-top: 30px;}
   .full-menu-box {display: block; width: 100%; border: none; padding: 0;}
   .full-menu-inner {padding: 10px 35px;}
@@ -35,9 +39,9 @@
   .full-menu-box-half .full-menu-inner:first-child {border-bottom: none;}
   .full-menu-box-half .full-menu-title {padding: 0;}
   .full-menu-box-half .full-menu-title:after {display: none;}
+  .full-menu-inner.active .full-menu-title {color: var(--main-color);}
   .full-menu-inner.active .full-menu-title:after {transform: rotate(-180deg);}
-  .full-menu-list {display: none;}
-  .full-menu-box.active .full-menu-list {display: block;}
+  .full-menu-list {display: none; padding: 10px 0 10px 10px;}
 
 } /*@media End*/
 
@@ -51,12 +55,20 @@
 
   /* Header */
   .header .wrapper {padding: 0 20px;}
-  .hd-wrap {height: 70px;}
-  .logo img {height: 45px;}
-  .all-menu {margin-left: 18px;}
-  .hd-right-menu-item .lang-btn {width: auto; height: 38px; padding: 0 13px;}
+  .hd-wrap {height: 65px;}
+  .logo img {height: 40px;}
+  .all-menu {margin-left: 15px;}
+  .hd-right-menu-item .lang-btn {width: auto; height: 30px; padding: 0 10px;}
   .hd-right-menu-item .lang-btn span {font-size: 13px;}
   .hd-right-menu-item .lang-btn span:first-child {margin-bottom: -3px;}
+  .hd-right-menu-item .lang-btn img {width: 14px;}
+  .full-menu {height: calc(100vh - 65px);}
+  .full-menu-wrap {padding-top: 15px;}
+  .full-menu-inner {padding: 10px 25px;}
+  .full-menu-title {font-size: 20px;}
+  .full-menu-list {padding: 7px 0 7px 10px;}
+  .full-menu-link > a {font-size: 16px;}
+  .full-menu-link:not(:first-child) {margin-top: 5px;}
   
 } /*@media End*/
 
